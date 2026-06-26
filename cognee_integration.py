@@ -755,7 +755,7 @@ def query_exercise_graph(question: str, api_key: Optional[str] = None) -> dict:
                 raise
 
         answer  = _answer_to_str(raw) or "(No answer returned from Cognee.)"
-        triples = await ctx_retriever.get_triples(question)
+        triples = await ctx_retriever.get_triples(question) if _answer_to_str(raw) else []
         usage   = tracker.summarize(phase)
 
         return {
