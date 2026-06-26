@@ -756,14 +756,32 @@ def query_exercise_graph(question: str, api_key: Optional[str] = None) -> dict:
 
         answer  = _answer_to_str(raw) or "(No answer returned from Cognee.)"
         triples = await ctx_retriever.get_triples(question) if _answer_to_str(raw) else []
+
+        # Flag: the retriever always returns top-K nodes via semantic similarity,
+        # even when they are not relevant. The LLM is the authoritative signal for
+        # whether those nodes actually grounded the answer.  When it says "no context",
+        # suppress the triples so the caller sees an empty list and hides the subgraph.
+        _NO_CONTEXT_PHRASES = (
+            "does not contain information",
+            "context does not contain",
+            "context is insufficient",
+            "no information",
+            "not in the provided context",
+            "cannot answer",
+        )
+        has_graph_context = bool(triples) and not any(
+            p in answer.lower() for p in _NO_CONTEXT_PHRASES
+        )
+
         usage   = tracker.summarize(phase)
 
         return {
-            "answer":       answer,
-            "scope":        scope,
-            "search_type":  stype.value,
-            "triples":      triples,
-            "total_tokens": usage["total_tokens"],
+            "answer":            answer,
+            "scope":             scope,
+            "search_type":       stype.value,
+            "triples":           triples if has_graph_context else [],
+            "has_graph_context": has_graph_context,
+            "total_tokens":      usage["total_tokens"],
         }
 
     return run_async(_query())
