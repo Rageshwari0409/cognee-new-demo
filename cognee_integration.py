@@ -63,6 +63,7 @@ for _d in [COGNEE_DATA, COGNEE_SYSTEM, ARTIFACTS_DIR, GRAPHS_DIR]:
 # guarantees the cached BaseConfig uses our project paths from the first call.
 os.environ.setdefault("DATA_ROOT_DIRECTORY", str(COGNEE_DATA))
 os.environ.setdefault("SYSTEM_ROOT_DIRECTORY", str(COGNEE_SYSTEM))
+os.environ.setdefault("ENABLE_BACKEND_ACCESS_CONTROL", "false")
 
 # Shared dict written by the ingest worker thread, read by the Streamlit main thread.
 # Avoids calling st.* APIs across thread boundaries.
@@ -551,37 +552,44 @@ def data_exists_in_cognee(api_key: Optional[str] = None) -> bool:
     """
     Returns True when exercise data has been successfully ingested before.
 
-    Short-circuits to True when the disk sentinel flag AND the LanceDB triplet
-    table both exist — this survives server restarts and prevents Neo4j returning
-    an empty result set (e.g. after a Neo4j reset) from triggering re-ingestion.
-    Falls back to a live Neo4j check only on the very first run (no flag yet).
+    Checks the disk sentinel flag AND LanceDB triplet table for a fast path,
+    but also verifies Neo4j has graph nodes — AuraDB free-tier instances can
+    lose all data after a pause while the flag/LanceDB tables remain on disk.
     """
     if not COGNEE_IMPORTABLE:
         return False
 
-    # Fast path: sentinel file written after a completed ingest + LanceDB intact.
-    if INGEST_FLAG.exists() and _triplet_table_exists():
-        return True
-
-    # If the triplet collection is missing, always re-ingest regardless of Neo4j state.
+    # If the triplet collection is missing, always re-ingest.
     if not _triplet_table_exists():
         return False
 
-    async def _check() -> bool:
-        configure_env(api_key)
+    async def _neo4j_has_nodes() -> bool:
         try:
+            configure_env(api_key)
             await setup()
             from cognee.infrastructure.databases.graph import get_graph_engine
             engine = await get_graph_engine()
-            nodes, _edges = await engine.get_graph_data()
+            nodes, _ = await engine.get_graph_data()
             return bool(nodes)
         except Exception:
-            return _lance_table_exists()
+            # On connectivity error, assume data exists to avoid a spurious re-ingest.
+            return True
 
     try:
-        return run_async(_check())
+        neo4j_ok = run_async(_neo4j_has_nodes())
     except Exception:
-        return _lance_table_exists()
+        neo4j_ok = True
+
+    if neo4j_ok:
+        return True
+
+    # Neo4j is empty despite LanceDB being intact (e.g. AuraDB was reset).
+    # Clear the flag so auto_ingest_if_needed re-ingests.
+    try:
+        INGEST_FLAG.unlink(missing_ok=True)
+    except Exception:
+        pass
+    return False
 
 
 # Path to the bundled exercises JSON file shipped with the app.
