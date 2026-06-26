@@ -1137,7 +1137,7 @@ def render_knowledge_graph(username: str):
         st.markdown("**Ask a question**")
         question = st.text_input(
             "Exercise question",
-            placeholder="e.g. What muscles do sit-ups target?",
+            placeholder="e.g. What muscles does the jack jump target?",
             label_visibility="collapsed",
             key="cognee_question_input",
             disabled=not data_ready,
@@ -1152,11 +1152,11 @@ def render_knowledge_graph(username: str):
         # Example chips
         st.caption("Try an example:")
         examples = [
-            "What muscles do sit-ups target?",
-            "Tell me instructions for a proper squat",
-            "I have a knee injury — what upper-body exercises are safe?",
-            "What exercise categories exist in this dataset?",
-            "Suggest a beginner ab exercise with no equipment",
+            "What muscles does the jack jump target?",
+            "How do I perform a barbell floor calf raise?",
+            "What beginner exercises can I do with just body weight?",
+            "Which exercises in the dataset target the biceps?",
+            "What back exercises are available and what muscles do they work?",
         ]
         for ex in examples:
             if st.button(ex, key=f"cog_ex_{ex[:20]}", use_container_width=True):
