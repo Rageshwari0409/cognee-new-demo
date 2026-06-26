@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    "Academy of Nutrition and Dietetics (AND) Position Paper: Vegetarian Diets (J Acad Nutr Diet, 2016) — doi:10.1016/j.jand.2016.09.025",
+    "NIH ODS Fact Sheets: Vitamin B12, Iron, Calcium, Zinc, Omega-3, Iodine, Vitamin D",
+    "ISSN Position Stand: Protein and Exercise (JISSN, 2017) — doi:10.1186/s12970-017-0177-8"
+  ],
+  "note": "Well-planned vegan and vegetarian diets are nutritionally adequate for all life stages (AND 2016). Attention to the nutrients below is sufficient to prevent deficiency.",
+
+  "nutrients_at_risk": {
+    "vitamin_b12": {
+      "risk_level": "CRITICAL for vegans — virtually absent in plant foods",
+      "why_matters": "Required for nerve function, red blood cell formation. Deficiency causes irreversible neurological damage.",
+      "rda_mcg": 2.4,
+      "reliable_plant_sources": [
+        "Fortified nutritional yeast (check label — not all brands are fortified)",
+        "Fortified plant milks (oat, soy, almond)",
+        "Fortified breakfast cereals",
+        "B12 supplement (cyanocobalamin 250 mcg/day or 2500 mcg/week are common doses)"
+      ],
+      "vegetarian_note": "Lacto-ovo vegetarians get B12 from eggs and dairy; still monitor levels annually.",
+      "source": "NIH ODS — Vitamin B12 Fact Sheet"
+    },
+    "iron": {
+      "risk_level": "Moderate — non-heme iron from plants is less bioavailable than heme iron",
+      "why_matters": "Oxygen transport, energy metabolism. Low iron causes fatigue — common in active vegetarians.",
+      "rda_mg": { "adult_female": 18, "adult_male": 8 },
+      "vegetarian_rda_multiplier": "1.8x the standard RDA recommended by the National Academies for vegetarians",
+      "top_plant_sources_mg_per_100g": [
+        { "food": "Lentils, cooked",        "iron_mg": 3.3 },
+        { "food": "Tofu, firm",             "iron_mg": 2.7 },
+        { "food": "Chickpeas, cooked",      "iron_mg": 2.9 },
+        { "food": "Pumpkin seeds",          "iron_mg": 8.8 },
+        { "food": "Spinach, cooked",        "iron_mg": 3.6 },
+        { "food": "Fortified oats (dry)",   "iron_mg": 4.0 }
+      ],
+      "absorption_enhancers": "Vitamin C (lemon juice, bell pepper, tomatoes) — increases non-heme absorption up to 6x",
+      "absorption_inhibitors": "Coffee, tea, calcium supplements — separate from iron-rich meals by 1–2 hours",
+      "source": "NIH ODS — Iron Fact Sheet"
+    },
+    "calcium": {
+      "risk_level": "Moderate for vegans; lower risk for lacto-vegetarians",
+      "why_matters": "Bone density, muscle contraction, nerve signalling.",
+      "rda_mg": 1000,
+      "top_vegan_sources_mg_per_100g": [
+        { "food": "Fortified plant milk (200ml serving)", "calcium_mg": 240 },
+        { "food": "Tofu, firm (set with calcium sulfate)", "calcium_mg": 350 },
+        { "food": "Edamame, cooked",                      "calcium_mg": 63 },
+        { "food": "Bok choy, cooked",                     "calcium_mg": 93 },
+        { "food": "Almonds",                              "calcium_mg": 264 },
+        { "food": "Fortified orange juice (200ml)",       "calcium_mg": 300 }
+      ],
+      "note": "Spinach and kale contain calcium but also oxalates that reduce absorption — don't rely on them as primary sources.",
+      "source": "NIH ODS — Calcium Fact Sheet"
+    },
+    "zinc": {
+      "risk_level": "Moderate — phytates in grains and legumes inhibit absorption",
+      "why_matters": "Immune function, wound healing, testosterone, protein synthesis.",
+      "rda_mg": { "adult_female": 8, "adult_male": 11 },
+      "vegetarian_note": "AND recommends vegetarians aim for 50% more than standard RDA",
+      "top_plant_sources_mg_per_100g": [
+        { "food": "Pumpkin seeds",     "zinc_mg": 7.8 },
+        { "food": "Hemp seeds",        "zinc_mg": 5.0 },
+        { "food": "Chickpeas, cooked", "zinc_mg": 1.5 },
+        { "food": "Cashews",           "zinc_mg": 5.6 },
+        { "food": "Oats, dry",         "zinc_mg": 3.6 }
+      ],
+      "absorption_tip": "Soaking, sprouting, or fermenting legumes reduces phytates and improves zinc absorption.",
+      "source": "NIH ODS — Zinc Fact Sheet; AND 2016"
+    },
+    "omega_3": {
+      "risk_level": "Moderate for vegans — ALA from plants converts poorly to EPA/DHA",
+      "why_matters": "Heart health, inflammation regulation, brain function, recovery from training.",
+      "conversion_note": "Only ~5–10% of ALA (plant-derived) converts to EPA; <1% to DHA. Active individuals need EPA/DHA directly.",
+      "ala_sources": ["flaxseed", "chia seeds", "hemp seeds", "walnuts"],
+      "epa_dha_vegan_source": "Algal oil supplement — the only direct vegan EPA/DHA source (what fish eat to become rich in omega-3)",
+      "recommended_dose": "250–500 mg EPA+DHA/day from algal oil (consistent with ACSM and AND recommendations)",
+      "source": "NIH ODS — Omega-3 Fact Sheet; AND 2016"
+    },
+    "vitamin_d": {
+      "risk_level": "Universal in low-sunlight regions; higher risk for vegans",
+      "why_matters": "Calcium absorption, bone health, immune function, muscle recovery.",
+      "rda_iu": 600,
+      "plant_sources": ["Fortified plant milks", "Fortified cereals", "UV-exposed mushrooms (limited)"],
+      "supplement_note": "D3 is usually animal-derived; D2 and lichen-derived D3 are vegan alternatives.",
+      "source": "NIH ODS — Vitamin D Fact Sheet"
+    },
+    "iodine": {
+      "risk_level": "High for vegans who avoid dairy and iodised salt",
+      "why_matters": "Thyroid function, metabolic rate.",
+      "rda_mcg": 150,
+      "vegan_sources": ["Iodised salt (use a pinch daily)", "Seaweed (nori, kelp — variable, can be excessive)", "Iodine supplement"],
+      "source": "NIH ODS — Iodine Fact Sheet"
+    }
+  },
+
+  "protein_completeness": {
+    "complete_plant_proteins": [
+      { "food": "Quinoa",   "notes": "All 9 essential amino acids" },
+      { "food": "Soy / Edamame / Tofu", "notes": "All 9 EAAs, highest DIAAS among plant proteins" },
+      { "food": "Hemp seeds", "notes": "All 9 EAAs, good omega-3 ratio" },
+      { "food": "Buckwheat", "notes": "All 9 EAAs" }
+    ],
+    "complementary_combos": [
+      "Rice + lentils / dal — classic Indian complete protein",
+      "Chickpeas + whole wheat (roti + chole)",
+      "Oats + soy milk",
+      "Pita + hummus (wheat + chickpea)",
+      "Rice + black beans"
+    ],
+    "and_2016_note": "Combining within a day (not necessarily in one meal) is sufficient to meet all amino acid needs.",
+    "active_individuals_note": "Athletes and regular exercisers should aim for upper range (1.6–2.0 g/kg) to compensate for lower plant protein digestibility (ISSN 2017)."
+  },
+
+  "quick_reference_checklist": [
+    "B12: supplement daily (vegans) or monitor annually (vegetarians)",
+    "Iron: pair every iron-rich meal with vitamin C",
+    "Calcium: 3 servings fortified food or tofu per day",
+    "Zinc: soak legumes before cooking; eat pumpkin seeds regularly",
+    "Omega-3: algal oil 250–500 mg EPA+DHA if no fatty fish",
+    "Vitamin D: supplement Oct–Apr in low-sunlight climates",
+    "Iodine: use iodised salt or supplement if avoiding dairy"
+  ]
+}

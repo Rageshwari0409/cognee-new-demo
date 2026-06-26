@@ -1,0 +1,23 @@
+{
+  "country": "IN",
+  "onboarding_complete": true,
+  "diet_constraints": {
+    "diet_type": ["vegetarian"],
+    "allergies": [],
+    "intolerances": []
+  },
+  "preferences": {
+    "max_prep_minutes": 20,
+    "cuisines_liked": ["Indian", "Mediterranean"]
+  },
+  "goals": {
+    "primary": "general health"
+  },
+  "fitness_profile": {
+    "workout_types": ["strength_hypertrophy"],
+    "workout_days_per_week": 3,
+    "typical_workout_time": "evening",
+    "fitness_goal": "general_fitness_maintenance",
+    "body_weight_kg": null
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    "ISSN Position Stand: Nutrient Timing (JISSN, 2017) — doi:10.1186/s12970-017-0189-4",
+    "ACSM Position Stand: Nutrition and Athletic Performance (Med Sci Sports Exerc, 2016)",
+    "ISSN Position Stand: Protein and Exercise (JISSN, 2017) — doi:10.1186/s12970-017-0177-8"
+  ],
+  "note": "General population guidelines — not personal medical or clinical nutrition advice.",
+
+  "pre_workout": {
+    "purpose": "Top up glycogen stores, prime muscle protein synthesis, prevent muscle breakdown.",
+    "timing_windows": [
+      {
+        "window": "2–4 hours before",
+        "carbs_g_per_kg": "1–4",
+        "protein_g": "20–40",
+        "fat": "low — slows gastric emptying",
+        "example_meal": "Oats with banana and a small serve of Greek yogurt (lactose-free) or tofu scramble on wholegrain toast"
+      },
+      {
+        "window": "30–60 minutes before",
+        "carbs_g_per_kg": "0.5–1",
+        "protein_g": "10–20",
+        "fat": "minimal",
+        "example_meal": "Banana with a small handful of almonds, or oatmeal with a boiled egg (if not vegetarian)"
+      }
+    ],
+    "vegetarian_notes": "For vegetarians: combine legumes + grains (e.g. rice and dal) for complete amino acid profile pre-workout. Plant-based protein digests slightly slower — eat the larger meal 2–3 hrs before, not 30 min.",
+    "foods_to_prioritise": ["banana", "oats", "sweet potato", "brown rice", "quinoa", "dates"],
+    "foods_to_avoid_before": ["high-fat meals", "high-fibre raw vegetables", "spicy food"],
+    "source": "ACSM/ISSN 2016–2017"
+  },
+
+  "post_workout": {
+    "purpose": "Replenish glycogen, stimulate muscle protein synthesis (MPS), reduce muscle breakdown.",
+    "timing": "Within 2 hours of training. The 30-minute 'anabolic window' is real but less critical if total daily protein is adequate (ISSN 2017).",
+    "protein_g_per_serving": "20–40",
+    "carbs_g_per_kg": "0.8–1.2",
+    "leucine_note": "700–3000 mg leucine per serving drives MPS. Found in: Greek yogurt, eggs, legumes+rice, soy.",
+    "example_meals": [
+      "Greek yogurt (lactose-free) with banana and oats — protein + fast carbs, ready in 2 min",
+      "Chickpea and spinach bowl over brown rice — complete protein when combined",
+      "Quinoa with roasted vegetables and tahini — all three macros, 20+ g protein"
+    ],
+    "vegetarian_sources": {
+      "high_protein": ["Greek yogurt (lactose-free)", "eggs", "quinoa", "edamame", "chickpeas + rice", "tofu"],
+      "fast_carbs": ["banana", "white rice", "dates", "oats"]
+    },
+    "source": "ISSN 2017 — doi:10.1186/s12970-017-0177-8"
+  },
+
+  "by_workout_type": {
+    "strength_hypertrophy": {
+      "primary_goal": "Muscle protein synthesis",
+      "protein_g_per_kg_per_day": "1.6–2.2",
+      "carbs_g_per_kg_per_day": "3–5",
+      "timing_emphasis": "Post-workout protein within 2 hours is important",
+      "key_nutrients": ["leucine", "creatine", "iron", "zinc"],
+      "source": "ISSN 2017"
+    },
+    "endurance_cardio": {
+      "primary_goal": "Glycogen availability and replenishment",
+      "protein_g_per_kg_per_day": "1.2–1.6",
+      "carbs_g_per_kg_per_day": "6–10 on heavy days, 3–5 on rest days",
+      "timing_emphasis": "Pre-workout carbs critical; intra-workout carbs for sessions > 60 min",
+      "key_nutrients": ["iron", "electrolytes", "B12 (vegetarians)", "carbohydrates"],
+      "source": "ACSM 2016"
+    },
+    "hiit": {
+      "primary_goal": "Both glycogen and muscle — combined demands",
+      "protein_g_per_kg_per_day": "1.4–2.0",
+      "carbs_g_per_kg_per_day": "4–6",
+      "timing_emphasis": "Pre-workout carbs + post-workout protein+carbs combo",
+      "key_nutrients": ["magnesium", "electrolytes", "protein", "antioxidants"],
+      "source": "ISSN 2017 / ACSM 2016"
+    },
+    "yoga_mobility": {
+      "primary_goal": "Recovery, anti-inflammation, joint support",
+      "protein_g_per_kg_per_day": "1.2–1.6",
+      "carbs_g_per_kg_per_day": "3–5",
+      "timing_emphasis": "General meal quality more important than precise timing",
+      "key_nutrients": ["omega-3 (anti-inflammatory)", "turmeric", "magnesium", "vitamin D"],
+      "source": "General sports nutrition consensus"
+    },
+    "rest_day": {
+      "primary_goal": "Recovery and muscle repair",
+      "protein_g_per_kg_per_day": "1.4–1.8",
+      "carbs_g_per_kg_per_day": "3–4",
+      "timing_emphasis": "Distribute protein evenly across 3–5 meals",
+      "key_nutrients": ["protein", "antioxidants", "magnesium", "sleep-supporting foods"],
+      "source": "ISSN 2017"
+    }
+  },
+
+  "body_composition_phases": {
+    "bulking": {
+      "goal": "Maximise muscle gain with minimal fat gain (lean bulk)",
+      "caloric_surplus_kcal": "200–300 above maintenance (aggressive bulk risks excess fat gain)",
+      "protein_g_per_kg": "1.6–2.2",
+      "carbs_g_per_kg": "5–7 on training days, 3–4 on rest days",
+      "fat_pct_of_calories": "20–30%",
+      "training_day_focus": "Higher carbs pre and post workout to fuel performance and replenish glycogen",
+      "key_foods": ["oats", "brown rice", "quinoa", "lentils", "chickpeas", "banana", "sweet potato", "tofu", "edamame"],
+      "vegetarian_note": "Harder to hit caloric surplus on plants — add calorie-dense options: avocado, nut butters (not peanut if allergy), seeds, olive oil, full-fat yogurt (LF).",
+      "source": "ISSN 2017 Diets and Body Composition"
+    },
+    "cutting": {
+      "goal": "Lose fat while preserving lean muscle",
+      "caloric_deficit_kcal": "300–500 below maintenance",
+      "protein_g_per_kg": "2.0–2.7 (higher than maintenance to spare muscle)",
+      "carbs_g_per_kg": "2–4 (reduce from training day amounts, keep around workouts)",
+      "fat_pct_of_calories": "20–30%",
+      "training_day_focus": "Keep carbs around the workout window; cut carbs on rest days first",
+      "satiety_strategy": "High-volume low-calorie foods: non-starchy veg, legumes, Greek yogurt (LF)",
+      "key_foods": ["spinach", "broccoli", "cucumber", "lentils", "chickpeas", "tofu", "Greek yogurt (LF)", "oats"],
+      "vegetarian_note": "Protein preservation on a cut is harder on plants — prioritise legumes and tofu at every meal.",
+      "source": "ISSN 2017 Diets and Body Composition"
+    },
+    "maintenance": {
+      "goal": "Hold body composition while maintaining performance",
+      "calories": "At maintenance (TDEE)",
+      "protein_g_per_kg": "1.6–2.0",
+      "carbs_g_per_kg": "3–5",
+      "note": "Most people benefit from spending the majority of their time here — cycling bulk/cut continuously increases fat storage risk.",
+      "source": "ISSN 2017"
+    }
+  },
+
+  "meal_timing_principles": [
+    "Distribute protein evenly: 20–40 g per meal, 4–5 times per day is more effective than one large dose (ISSN 2017).",
+    "Do not train fasted for hypertrophy goals — eat a protein+carb snack at minimum 30–60 min before.",
+    "For vegetarians: eating plant proteins at each meal is especially important given lower leucine density per gram.",
+    "Carb timing matters most for endurance athletes; for general fitness, total daily intake is the priority."
+  ]
+}

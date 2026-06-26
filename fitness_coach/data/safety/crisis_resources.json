@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.1",
+  "default_country": "IN",
+  "resources": [
+    {
+      "country": "IN",
+      "name": "iCALL — TISS Psychosocial Helpline",
+      "contact": "Call 9152987821 (Mon–Sat, 10am–8pm)",
+      "languages": ["English", "Hindi", "Marathi", "Tamil", "and more"],
+      "url": "https://icallhelpline.org",
+      "emergency": "112",
+      "notes": "Free, professional counsellors. TATA Institute of Social Sciences."
+    },
+    {
+      "country": "IN",
+      "name": "Vandrevala Foundation",
+      "contact": "Call or WhatsApp +91 9999 666 555 (24×7, free)",
+      "languages": ["Multiple Indian regional languages available"],
+      "url": "https://www.vandrevalafoundation.com/free-counseling",
+      "emergency": "112",
+      "notes": "24/7, covers eating & body image, self-harm, suicidal thoughts."
+    },
+    {
+      "country": "IN",
+      "name": "KIRAN Mental Health Helpline (Government of India)",
+      "contact": "Call 1800-599-0019 (toll-free, 24×7)",
+      "languages": ["13 Indian languages"],
+      "url": null,
+      "emergency": "112",
+      "notes": "Free, government-run. Covers crisis, rehabilitation, psychological support."
+    },
+    {
+      "country": "US",
+      "name": "988 Suicide & Crisis Lifeline",
+      "contact": "Call or text 988",
+      "languages": ["English", "Spanish"],
+      "url": "https://988lifeline.org",
+      "emergency": "911",
+      "notes": null
+    },
+    {
+      "country": "UK",
+      "name": "Samaritans",
+      "contact": "Call 116 123 (free, 24×7)",
+      "languages": ["English"],
+      "url": "https://www.samaritans.org",
+      "emergency": "999",
+      "notes": null
+    }
+  ],
+  "eating_disorder": [
+    {
+      "country": "IN",
+      "name": "Vandrevala Foundation (eating & body image)",
+      "contact": "Call or WhatsApp +91 9999 666 555 (24×7, free)",
+      "url": "https://www.vandrevalafoundation.com/free-counseling",
+      "notes": "Covers eating disorders, body image issues, distress around food."
+    },
+    {
+      "country": "IN",
+      "name": "iCALL — TISS",
+      "contact": "Call 9152987821 (Mon–Sat, 10am–8pm)",
+      "url": "https://icallhelpline.org",
+      "notes": "Professional counsellors trained in eating and body image concerns."
+    },
+    {
+      "country": "US",
+      "name": "NEDA Helpline",
+      "contact": "Call or text 1-800-931-2237",
+      "url": "https://www.nationaleatingdisorders.org",
+      "notes": null
+    }
+  ]
+}

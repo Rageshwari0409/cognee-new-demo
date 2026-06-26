@@ -1,0 +1,8 @@
+{
+  "coaching_paused": false,
+  "pause_reason": null,
+  "onboarding_step": 5,
+  "last_safety_event": null,
+  "turn_count": 0,
+  "demo_mode": true
+}

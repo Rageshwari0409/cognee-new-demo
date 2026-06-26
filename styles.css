@@ -1,0 +1,740 @@
+/* Custom styles */
+
+:root {
+    --primary-color: #3B82F6 !important; /* Soothing blue primary theme color (landing page) */
+}
+
+/* Switch primary accent color to thinking blue inside the app once logged in */
+div[data-testid="stAppViewContainer"]:not(:has(.landing-title)) {
+    --primary-color: #0284C7 !important;
+}
+
+/* Global Style Overrides */
+html, body, [data-testid="stAppViewContainer"] {
+    background-color: #F1F5F9 !important; /* Lighter shade background (Slate-100) */
+    color: #1E293B !important; /* Dark Slate text for excellent readability */
+    font-size: 16px;
+}
+
+/* Adjust font sizes globally to be relatively larger */
+p, li, input, textarea, select {
+    font-size: 1.00rem !important;
+}
+
+/* Pull main content to the very top */
+.block-container, [data-testid="stAppViewBlockContainer"] {
+    padding-top: 1.5rem !important;
+    padding-bottom: 2rem !important;
+}
+
+/* Minimize top header spacing */
+/* Header typography */
+h1, h2, h3, h4, h5, h6,
+[data-testid="stMarkdownContainer"] h1,
+[data-testid="stMarkdownContainer"] h2,
+[data-testid="stMarkdownContainer"] h3,
+[data-testid="stMarkdownContainer"] h4,
+[data-testid="stMarkdownContainer"] h5,
+[data-testid="stMarkdownContainer"] h6 {
+    color: #0F172A !important; /* Dark Slate headers */
+    font-weight: 700 !important;
+    letter-spacing: -0.5px;
+}
+
+h1, [data-testid="stMarkdownContainer"] h1 { font-size: 2.2rem !important; font-weight: 800 !important; } /* Make headings bold and prominent */
+h2, [data-testid="stMarkdownContainer"] h2 { font-size: 1.7rem !important; font-weight: 800 !important; }
+h3, [data-testid="stMarkdownContainer"] h3 { font-size: 1.4rem !important; font-weight: 800 !important; }
+h4, [data-testid="stMarkdownContainer"] h4 { font-size: 1.2rem !important; font-weight: 800 !important; }
+
+/* Ensure spans nested inside headings inherit header styles rather than global span overrides */
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
+[data-testid="stMarkdownContainer"] h1 span,
+[data-testid="stMarkdownContainer"] h2 span,
+[data-testid="stMarkdownContainer"] h3 span,
+[data-testid="stMarkdownContainer"] h4 span,
+[data-testid="stMarkdownContainer"] h5 span,
+[data-testid="stMarkdownContainer"] h6 span,
+.landing-title span {
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    color: inherit !important;
+    line-height: inherit !important;
+}
+
+
+/* Landing / login page text styles */
+.landing-title, [data-testid="stMarkdownContainer"] h1.landing-title {
+    font-size: 2.6rem !important; /* Slightly smaller landing title */
+    font-weight: 800 !important;
+    color: #0F172A !important;
+    text-align: center !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.25rem !important;
+    letter-spacing: -1.0px !important;
+    line-height: 1.15 !important;
+}
+
+.landing-subtitle, [data-testid="stMarkdownContainer"] p.landing-subtitle {
+    font-size: 1.0rem !important; /* Slightly smaller subtitle preserving ratio */
+    font-weight: 500 !important;
+    color: #475569 !important;
+    text-align: center !important;
+    margin-bottom: 1.2rem !important;
+    line-height: 1.3 !important;
+}
+
+/* Sidebar Custom Styling - Classic premium dark sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #0F172A !important; 
+    border-right: 1px solid #1E293B !important;
+    width: 280px !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {
+    padding-top: 0px !important; /* Pull content to the very top */
+}
+
+section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"] {
+    gap: 0.25rem !important; /* Extremely tight sidebar element gap */
+}
+
+section[data-testid="stSidebar"] div[data-testid="stElementContainer"] {
+    margin-top: 0px !important;
+    margin-bottom: 2px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+section[data-testid="stSidebar"] hr {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+section[data-testid="stSidebar"] .stButton > button {
+    padding: 4px 10px !important;
+    font-size: 0.82rem !important;
+    min-height: 26px !important;
+    margin-top: 0px !important;
+    margin-bottom: 1px !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stExpander"] {
+    margin-top: 0px !important;
+    margin-bottom: 2px !important;
+    background-color: transparent !important;
+    border: 1px solid #1E293B !important;
+}
+
+section[data-testid="stSidebar"] .streamlit-expanderHeader,
+section[data-testid="stSidebar"] [data-testid="stExpander"] details,
+section[data-testid="stSidebar"] [data-testid="stExpander"] summary {
+    background-color: transparent !important;
+    color: #CBD5E1 !important;
+    padding: 3px 6px !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stExpander"] div {
+    background-color: transparent !important;
+}
+
+/* Ensure child input fields inside the expander retain white background */
+section[data-testid="stSidebar"] [data-testid="stExpander"] div[data-baseweb="input"],
+section[data-testid="stSidebar"] [data-testid="stExpander"] div[data-baseweb="input"] div,
+section[data-testid="stSidebar"] [data-testid="stExpander"] input {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+}
+
+/* Sidebar general text styling - excluding buttons to allow custom coloring */
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span:not(.stButton *),
+section[data-testid="stSidebar"] strong {
+    color: #CBD5E1 !important;
+    font-size: 0.88rem !important;
+}
+
+/* Ensure headings inside sidebar are bright white and slightly larger, but still scaled down */
+section[data-testid="stSidebar"] h1, 
+section[data-testid="stSidebar"] h2, 
+section[data-testid="stSidebar"] h3,
+section[data-testid="stSidebar"] h4,
+section[data-testid="stSidebar"] strong {
+    color: #FFFFFF !important;
+    font-size: 1.15rem !important; /* Scaled down sidebar headings */
+}
+
+/* Sidebar custom navigation styles using wrappers around Streamlit buttons */
+.sidebar-nav-inactive, 
+.sidebar-nav-active {
+    margin-bottom: 2px !important;
+}
+
+.sidebar-nav-inactive button, 
+.sidebar-nav-inactive button:focus,
+.sidebar-nav-inactive button:active {
+    background-color: transparent !important;
+    color: #CBD5E1 !important; /* Soft grey text */
+    border: none !important;
+    border-left: 4px solid transparent !important;
+    border-radius: 0px !important;
+    text-align: left !important;
+    padding: 8px 16px !important;
+    justify-content: flex-start !important;
+    font-weight: 500 !important;
+    font-size: 0.92rem !important;
+    transition: all 0.2s ease !important;
+    box-shadow: none !important;
+}
+
+.sidebar-nav-inactive button:hover {
+    background-color: rgba(2, 132, 199, 0.1) !important; /* Soft thinking blue hover */
+    color: #0284C7 !important;
+    border-left-color: #0284C7 !important;
+}
+
+.sidebar-nav-active button,
+.sidebar-nav-active button:focus,
+.sidebar-nav-active button:active {
+    background-color: rgba(2, 132, 199, 0.15) !important; /* Selected thinking blue block */
+    color: #0284C7 !important; /* Thinking blue text */
+    border: none !important;
+    border-left: 4px solid #0284C7 !important; /* Left active line */
+    border-radius: 0px !important;
+    font-weight: 700 !important;
+    text-align: left !important;
+    padding: 8px 16px !important;
+    justify-content: flex-start !important;
+    font-size: 0.92rem !important;
+    box-shadow: none !important;
+}
+
+/* Secondary styled logout container in sidebar */
+.sidebar-logout-container {
+    margin-top: 15px !important;
+}
+
+.sidebar-logout-container button,
+.sidebar-logout-container button:focus,
+.sidebar-logout-container button:active {
+    background-color: transparent !important;
+    color: #94A3B8 !important;
+    border: 1px solid #334155 !important;
+    border-radius: 8px !important;
+    font-size: 0.85rem !important;
+    padding: 6px 12px !important;
+    transition: all 0.2s ease !important;
+}
+
+.sidebar-logout-container button:hover {
+    background-color: rgba(239, 68, 68, 0.1) !important; /* Soft red tint */
+    color: #EF4444 !important;
+    border-color: #EF4444 !important;
+}
+
+/* Custom logo wrapper in sidebar - centered */
+.logo-container {
+    text-align: center;
+    padding: 0px !important; 
+    margin-top: 0px !important;
+    margin-bottom: 8px !important;
+    background-color: transparent;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Center all image containers and images in the sidebar */
+section[data-testid="stSidebar"] [data-testid="stImage"],
+section[data-testid="stSidebar"] [data-testid="element-container"]:has(img),
+section[data-testid="stSidebar"] div:has(> img),
+section[data-testid="stSidebar"] div:has(> div > img),
+section[data-testid="stSidebar"] div:has(> div > div > img) {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    margin-top: -20px !important; /* Move logo upwards */
+}
+
+section[data-testid="stSidebar"] img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-height: 85px !important;
+    width: auto !important;
+}
+
+/* Hide the View Fullscreen button on sidebar images to prevent overlapping */
+section[data-testid="stSidebar"] button[data-testid="StyledFullScreenButton"],
+section[data-testid="stSidebar"] button[title="View fullscreen"],
+section[data-testid="stSidebar"] [data-testid="stImage"] button,
+section[data-testid="stSidebar"] div[data-testid="stImage"] button {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Premium Card UI - Uniform light-grey/soft-blue cards with dark text */
+.memory-card {
+    background: #FFFFFF !important; /* Pure white background card */
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.memory-card:hover {
+    transform: translateY(-2px);
+    border-color: #0284C7 !important; /* Unified thinking blue border */
+    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.15) !important;
+}
+
+.memory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #F1F5F9;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+}
+
+.memory-tag {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.tag-semantic {
+    background-color: rgba(2, 132, 199, 0.1) !important; /* Unified thinking blue background */
+    color: #0284C7 !important;
+    border: 1px solid rgba(2, 132, 199, 0.25) !important;
+}
+
+.tag-episodic {
+    background-color: rgba(2, 132, 199, 0.1) !important;
+    color: #0284C7 !important;
+    border: 1px solid rgba(2, 132, 199, 0.25) !important;
+}
+
+.tag-procedural {
+    background-color: rgba(245, 166, 35, 0.1);
+    color: #D97706;
+    border: 1px solid rgba(245, 166, 35, 0.25);
+}
+
+.memory-time {
+    font-size: 0.82rem;
+    color: #64748B;
+}
+
+.memory-body {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #334155;
+}
+
+.memory-q {
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 6px;
+}
+
+.memory-r {
+    color: #475569;
+}
+
+/* Subtag Badges (Explicit/Implicit) */
+.subtag-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 8px;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.subtag-explicit {
+    background-color: #EFF6FF;
+    color: #1D4ED8;
+    border: 1px solid #BFDBFE;
+}
+
+.subtag-implicit {
+    background-color: #F8FAFC;
+    color: #475569;
+    border: 1px solid #E2E8F0;
+}
+
+/* Chat bubble aesthetics - Highly readable dark text on light backgrounds */
+.chat-container {
+    margin-bottom: 25px;
+}
+
+.chat-bubble {
+    padding: 16px 20px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    max-width: 85%;
+    font-size: 1.15rem !important; /* Increased chatbot message font size */
+}
+
+.chat-user {
+    background-color: #E0F2FE; /* Soft sky blue for user */
+    border: 1px solid #BAE6FD;
+    color: #1E293B;
+    margin-left: auto;
+    border-bottom-right-radius: 2px;
+}
+
+.chat-bot {
+    background-color: #FFFFFF; /* Pure white card for bot response */
+    border-left: 4px solid #0284C7 !important; /* Unified thinking blue left border */
+    border-top: 1px solid #E2E8F0;
+    border-right: 1px solid #E2E8F0;
+    border-bottom: 1px solid #E2E8F0;
+    color: #1E293B;
+    margin-right: auto;
+    border-bottom-left-radius: 2px;
+}
+
+.chat-sender {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.sender-user {
+    color: #0284C7;
+    text-align: right;
+}
+
+.sender-bot {
+    color: #0284C7;
+}
+
+/* Glowing thinking animation styling */
+@keyframes thinking-glow {
+    0% {
+        opacity: 0.6;
+        box-shadow: 0 0 5px rgba(2, 132, 199, 0.2);
+    }
+    50% {
+        opacity: 1.0;
+        box-shadow: 0 0 15px rgba(2, 132, 199, 0.4);
+        border-color: #0284C7;
+    }
+    100% {
+        opacity: 0.6;
+        box-shadow: 0 0 5px rgba(2, 132, 199, 0.2);
+    }
+}
+
+.thinking-box {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    padding: 12px 20px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    color: #0284C7;
+    font-weight: 600;
+    font-size: 1rem;
+    animation: thinking-glow 2s infinite ease-in-out;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.thinking-dots {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+.thinking-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #0284C7;
+    border-radius: 50%;
+    margin-right: 4px;
+    animation: dot-bounce 1.4s infinite ease-in-out both;
+}
+
+.thinking-dot:nth-child(1) { animation-delay: -0.32s; }
+.thinking-dot:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes dot-bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1.0); }
+}
+
+/* Form controls overrides - Compact padding */
+/* Buttons on landing page (contains .landing-title) */
+div[data-testid="stAppViewContainer"]:has(.landing-title) .stButton > button {
+    background: linear-gradient(135deg, #60A5FA 0%, #2563EB 100%) !important; /* Soothing blue gradient */
+    color: #FFFFFF !important; 
+    font-weight: 700 !important;
+    font-size: 0.95rem !important; /* Smaller text size */
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 6px 16px !important; /* Compact button padding */
+    transition: all 0.2s ease !important;
+}
+
+div[data-testid="stAppViewContainer"]:has(.landing-title) .stButton > button:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3) !important; /* Blue shadow */
+}
+
+/* Buttons inside the application (does not contain .landing-title) */
+div[data-testid="stAppViewContainer"]:not(:has(.landing-title)) .stButton > button {
+    background: linear-gradient(135deg, #38BDF8 0%, #0284C7 100%) !important; /* Thinking blue gradient */
+    color: #FFFFFF !important; 
+    font-weight: 700 !important;
+    font-size: 0.95rem !important; /* Smaller text size */
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 6px 16px !important; /* Compact button padding */
+    transition: all 0.2s ease !important;
+}
+
+div[data-testid="stAppViewContainer"]:not(:has(.landing-title)) .stButton > button:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3) !important; /* Thinking blue shadow */
+}
+
+/* Light contrast input fields */
+div[data-baseweb="input"], 
+div[data-baseweb="input"] > div, 
+input, 
+textarea,
+div[data-baseweb="select"] input {
+    background-color: #FFFFFF !important; 
+    color: #0F172A !important; 
+    border-color: #CBD5E1 !important;
+    caret-color: #0F172A !important; /* Fix white vertical caret cursor on white background */
+}
+
+/* Fix for password eye icon button background */
+div[data-baseweb="input"] button {
+    background-color: transparent !important;
+    color: #475569 !important;
+}
+
+/* Ensure placeholder text is readable */
+div[data-baseweb="input"] input::placeholder, textarea::placeholder {
+    color: #94A3B8 !important;
+    opacity: 0.9;
+}
+
+/* Focus border highlights - Override red and green focus borders globally to blue */
+div[data-baseweb="input"]:focus-within,
+div[data-baseweb="textarea"]:focus-within,
+div[data-baseweb="select"]:focus-within,
+.stTextInput input:focus,
+.stSelectbox select:focus,
+.stTextArea textarea:focus {
+    border-color: #3B82F6 !important;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.25) !important;
+}
+
+/* Remove vertical separator line in all select boxes without breaking outer borders */
+div[data-baseweb="select"] [data-testid="stSelectboxIndicator"] {
+    border-left: none !important;
+}
+
+/* Label styling */
+.stTextInput label, 
+.stPasswordInput label, 
+.stSelectbox label, 
+.stRadio label, 
+label,
+[data-testid="stWidgetLabel"] p {
+    color: #0F172A !important; 
+    font-weight: 600 !important;
+    font-size: 1.05rem !important; /* Compact labels to prevent vertical scrolling */
+    letter-spacing: 0.2px;
+    margin-bottom: 4px !important;
+}
+
+/* Override labels inside sidebar to be bright white/light grey */
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p,
+section[data-testid="stSidebar"] span,
+section[data-testid="stSidebar"] p {
+    color: #F8FAFC !important;
+}
+
+/* Streamlit Tabs Custom styling - Compact design */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: transparent !important;
+    border-bottom: 2px solid #CBD5E1 !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: #64748B !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important; /* Smaller tab text size */
+    padding: 6px 14px !important; /* Compact tab padding */
+}
+
+/* Tabs on landing page (contains .landing-title) */
+div[data-testid="stAppViewContainer"]:has(.landing-title) .stTabs [data-baseweb="tab"][aria-selected="true"] {
+    color: #3B82F6 !important; 
+    border-bottom: 2px solid #3B82F6 !important;
+}
+
+/* Tabs inside the application (does not contain .landing-title) */
+div[data-testid="stAppViewContainer"]:not(:has(.landing-title)) .stTabs [data-baseweb="tab"][aria-selected="true"] {
+    color: #0284C7 !important; 
+    border-bottom: 2px solid #0284C7 !important;
+}
+
+/* Radio button horizontal bar custom styling - white card look */
+.stRadio > div {
+    background-color: #FFFFFF !important;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #CBD5E1;
+}
+
+/* Radio button label text inside main area */
+.stRadio [data-testid="stWidgetLabel"] + div label p {
+    color: #334155 !important;
+    font-size: 1.05rem !important;
+}
+
+
+/* Radio dot and checkbox colors are natively handled by CSS variables override at the top of this file */
+
+[data-testid="stBottom"], 
+[data-testid="stBottom"] > div {
+    background-color: #F1F5F9 !important; 
+    border-top: 1px solid transparent !important;
+    padding-bottom: 4px !important; /* Pull container slightly down */
+}
+
+/* Premium Chat Input Box Customization */
+div[data-testid="stChatInput"] {
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-bottom: 0px !important; /* Align to the bottom edge */
+}
+
+div[data-testid="stChatInput"] > div {
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+div[data-testid="stChatInput"] textarea {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+    border: 2px solid #CBD5E1 !important;
+    border-radius: 12px !important;
+    padding: 10px 90px 10px 18px !important; /* Shorter padding to reduce height */
+    font-size: 1.05rem !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+    height: 44px !important; /* Compact height */
+}
+
+/* Hover effects */
+div[data-testid="stChatInput"] textarea:hover {
+    border-color: #0284C7 !important; /* Thinking blue */
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.15) !important;
+    background-color: #FAFDFF !important; /* Ice-blue tint on hover */
+}
+
+/* Focus / active typing effects - Thinking blue theme */
+div[data-testid="stChatInput"] textarea:focus {
+    border-color: #0284C7 !important;
+    box-shadow: 0 4px 15px rgba(2, 132, 199, 0.25) !important;
+    background-color: #FFFFFF !important;
+}
+
+/* Submit Send Button - Replaced green arrow with horizontal oval blue Send button */
+div[data-testid="stChatInput"] button {
+    background-color: #0284C7 !important; /* Thinking blue background */
+    border: 2px solid transparent !important;
+    border-radius: 20px !important; /* Horizontal oval shape */
+    width: 75px !important;
+    height: 32px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.25s ease !important;
+    box-shadow: 0 4px 10px rgba(2, 132, 199, 0.2) !important;
+    padding: 0 !important;
+}
+
+/* Hide native up-arrow SVG inside button */
+div[data-testid="stChatInput"] button svg {
+    display: none !important;
+}
+
+/* Add custom Send text */
+div[data-testid="stChatInput"] button::after {
+    content: "Send" !important;
+    font-weight: 700 !important;
+    font-size: 0.85rem !important;
+    color: #FFFFFF !important; /* Clean high-contrast white text on thinking blue */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Hover effect on Send button: brighter blue background, white-border glow, glowing shadow */
+div[data-testid="stChatInput"] button:hover {
+    background-color: #0369a1 !important; /* Brighter Thinking Blue */
+    border-color: #0284C7 !important; /* Thinking blue border */
+    box-shadow: 0 0 15px rgba(2, 132, 199, 0.6) !important; /* Glow effect */
+    transform: scale(1.03) !important;
+}
+
+/* Metrics and diagnostic card styles */
+.diagnostic-container {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.diagnostic-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+.diagnostic-item:last-child {
+    border-bottom: none;
+}
+
+.diagnostic-label {
+    color: #64748B;
+    font-weight: 600;
+}
+
+.diagnostic-val {
+    color: #0F172A;
+    font-weight: 700;
+}

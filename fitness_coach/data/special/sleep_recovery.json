@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    "Halson SL: Sleep in Elite Athletes and Nutritional Interventions (Sports Med, 2014)",
+    "ISSN Position Stand: Protein and Exercise (JISSN, 2017) — doi:10.1186/s12970-017-0177-8",
+    "NIH: Brain Basics — Understanding Sleep",
+    "Res PT et al: Protein ingestion before sleep improves post-exercise overnight recovery (Med Sci Sports Exerc, 2012)"
+  ],
+  "note": "Sleep is the single most impactful recovery intervention available. Nutrition can support but not replace 7–9 hours of quality sleep.",
+
+  "why_sleep_matters_for_fitness": [
+    "Growth hormone secretion peaks during deep sleep — critical for muscle repair",
+    "Cortisol regulation: poor sleep elevates cortisol, driving muscle breakdown and fat storage",
+    "Glycogen replenishment is impaired by sleep deprivation",
+    "Motor learning and skill consolidation happen during sleep — relevant for sport and exercise technique"
+  ],
+
+  "pre_sleep_nutrition": {
+    "protein_before_bed": {
+      "dose": "30–40 g casein or slow-digesting plant protein 30–60 min before sleep",
+      "why": "Stimulates muscle protein synthesis overnight. Res et al (2012) showed improved next-day recovery.",
+      "vegetarian_sources": [
+        "Cottage cheese (casein-rich, but contains lactose — use lactose-free version)",
+        "Greek yogurt, full-fat lactose-free",
+        "Tofu with hemp seeds (~25–30 g protein, slower digesting than whey)"
+      ],
+      "source": "Res et al 2012; ISSN 2017"
+    },
+    "tryptophan_foods": {
+      "why": "Tryptophan is the amino acid precursor to serotonin → melatonin. Eating tryptophan-rich foods with a small carb serving increases brain uptake.",
+      "sources": ["pumpkin seeds", "tofu", "oats", "banana", "almonds", "chickpeas"],
+      "carb_pairing": "A small serve of complex carbs (oats, banana) with the tryptophan food improves uptake across the blood-brain barrier.",
+      "source": "Halson 2014"
+    },
+    "magnesium": {
+      "why": "Supports GABA (calming neurotransmitter), reduces cortisol, improves sleep quality.",
+      "dose": "200–400 mg combined from food + supplement",
+      "food_sources": ["pumpkin seeds", "spinach", "almonds", "dark chocolate (small amount)"]
+    },
+    "timing": "Avoid large meals within 2–3 hours of sleep — elevated insulin and body temperature impair sleep onset.",
+    "avoid_before_bed": [
+      "Caffeine within 6 hours of sleep (half-life ~5 hours)",
+      "Alcohol — impairs sleep quality and REM despite aiding sleep onset",
+      "High-fat heavy meals — delayed gastric emptying causes discomfort and raises core temperature",
+      "Very high-fibre foods — fermentation and gas production can disturb sleep"
+    ]
+  },
+
+  "next_morning_recovery_nutrition": {
+    "rehydrate_first": "Overnight fluid loss is ~500ml–1L. Drink 500ml water before breakfast.",
+    "protein_at_breakfast": "25–30 g protein at breakfast extends overnight MPS benefit from the pre-sleep dose.",
+    "carbs": "Replenish glycogen if training the same day. Oats, fruit, whole grain toast.",
+    "avoid": "Skipping breakfast after hard training days — delays recovery and increases muscle breakdown"
+  },
+
+  "signs_poor_sleep_affecting_recovery": [
+    "Persistent soreness beyond 48 hours after training",
+    "Mood dips, irritability, low motivation (cortisol-driven)",
+    "Appetite increases, especially for sugar and refined carbs",
+    "Performance plateau despite consistent training"
+  ],
+
+  "quick_pre_sleep_options_for_vegetarians": [
+    {
+      "option": "Lactose-free Greek yogurt with a small banana",
+      "protein_g": 15,
+      "why": "Casein protein + tryptophan from banana + small carb for uptake"
+    },
+    {
+      "option": "Tofu with a handful of pumpkin seeds",
+      "protein_g": 20,
+      "why": "Plant casein-equivalent + magnesium from pumpkin seeds"
+    },
+    {
+      "option": "Small bowl of oats with hemp seeds",
+      "protein_g": 12,
+      "why": "Tryptophan + slow carbs + magnesium; gentle on the stomach"
+    }
+  ]
+}

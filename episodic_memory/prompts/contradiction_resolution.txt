@@ -1,0 +1,139 @@
+You are evaluating a potential conflict between an existing fitness memory record and new information from a recent AI coaching conversation.
+
+The existing record is a memory the AI already holds. The new information comes from a more recent conversation. Your task is to decide what to do with the new information: does it correct the existing memory, add to it, or describe something entirely different?
+
+---
+
+EXISTING RECORD:
+Episode type: {{existing_episode_type}}
+Occurred on: {{existing_occurred_on}}
+Outcome: {{existing_outcome}}
+Source quotes from original conversation: {{existing_source_quotes}}
+
+---
+
+NEW INCOMING INFORMATION:
+Episode type: {{new_episode_type}}
+Occurred on: {{new_occurred_on}}
+Outcome: {{new_outcome}}
+Source quotes from new conversation: {{new_source_quotes}}
+
+---
+
+DECISION RULES
+
+"contradiction" — the user has stated something that directly conflicts with a specific fact already recorded. This means the AI's memory is wrong and needs to be corrected. Classic examples: correcting a number ("actually it was 3km, not 5km"), retracting an outcome ("I said I finished the session but I actually left early"), explicitly contradicting a prior claim. Use action "supersede".
+
+"extension" — the new information adds new detail to the same event without conflicting with anything already recorded. The existing record remains accurate; it is simply incomplete. Classic examples: adding the name of the program to a record that said "started a new program", clarifying which muscle group was trained. Use action "merge".
+
+"new_event" — the new information describes a different event, a different session, or a different topic that does not meaningfully overlap with the existing record. Both the existing record and the new information should exist as separate memories. Use action "create".
+
+EDGE CASES:
+- Same topic, different date: almost always "new_event"
+- Same date, different detail that does not conflict: "extension"
+- User says "actually" or corrects a number or outcome: almost always "contradiction"
+- User provides more detail about the same session: "extension" unless the detail conflicts
+
+---
+
+OUTPUT FORMAT
+
+Return a single JSON object. No explanation outside the object.
+
+{
+  "decision": "contradiction" | "extension" | "new_event",
+  "reasoning": "One or two sentences explaining the decision. Be specific about which fact conflicts, extends, or is unrelated.",
+  "action": "supersede" | "merge" | "create"
+}
+
+---
+
+FEW-SHOT EXAMPLE 1 — True contradiction: user corrects a result
+
+Existing record:
+  episode_type: WorkoutEpisode
+  occurred_on: 2026-06-10
+  outcome: "Completed 5km run, felt strong throughout"
+  source_quotes: ["Did the full 5k, felt really good"]
+
+New incoming:
+  episode_type: WorkoutEpisode
+  occurred_on: 2026-06-10
+  outcome: "Run cut short at approximately 3km due to heat"
+  source_quotes: ["actually I had to stop at 3km, the heat got to me"]
+
+Expected output:
+{
+  "decision": "contradiction",
+  "reasoning": "The existing memory states the run was completed at 5km. The user's new statement explicitly corrects this to approximately 3km with a specific reason. The existing memory is factually wrong and must be replaced.",
+  "action": "supersede"
+}
+
+---
+
+FEW-SHOT EXAMPLE 2 — Extension: new detail adds to the same event without conflict
+
+Existing record:
+  episode_type: WorkoutEpisode
+  occurred_on: 2026-06-15
+  outcome: "Started a new strength training program"
+  source_quotes: ["starting a new program this week"]
+
+New incoming:
+  episode_type: WorkoutEpisode
+  occurred_on: 2026-06-15
+  outcome: "New program is a 5-day push-pull-legs split, 8 weeks long, focused on progressive overload"
+  source_quotes: ["it is a 5-day push pull legs split, 8 weeks long"]
+
+Expected output:
+{
+  "decision": "extension",
+  "reasoning": "The existing record confirms the program started but has no structural detail. The new information adds the program's format and duration without contradicting anything already recorded. Merging gives the AI a more complete picture of the same event.",
+  "action": "merge"
+}
+
+---
+
+FEW-SHOT EXAMPLE 3 — New event: different session, different day
+
+Existing record:
+  episode_type: WorkoutEpisode
+  occurred_on: 2026-06-10
+  outcome: "Strong upper body session, bench press at 95kg for 3 reps"
+  source_quotes: ["bench went well, hit 95kg for 3"]
+
+New incoming:
+  episode_type: WorkoutEpisode
+  occurred_on: 2026-06-17
+  outcome: "Lower body session, squats at 120kg for 5 reps — new personal best"
+  source_quotes: ["leg day today, squats went well, hit 120kg for 5"]
+
+Expected output:
+{
+  "decision": "new_event",
+  "reasoning": "Different exercise, different date, different session. The new information has no factual overlap with the existing record. Both should be stored as separate memories.",
+  "action": "create"
+}
+
+---
+
+FEW-SHOT EXAMPLE 4 — Contradiction: user retracts a completed session
+
+Existing record:
+  episode_type: WorkoutEpisode
+  occurred_on: 2026-06-20
+  outcome: "Completed full upper body session as planned"
+  source_quotes: ["did the session, felt good about it"]
+
+New incoming:
+  episode_type: WorkoutEpisode
+  occurred_on: 2026-06-20
+  outcome: "Session was cut short after 20 minutes — had to leave for a work emergency"
+  source_quotes: ["I actually had to leave after 20 minutes, had a work thing come up"]
+
+Expected output:
+{
+  "decision": "contradiction",
+  "reasoning": "The existing record states the full session was completed. The user is now correcting this — the session was cut short after 20 minutes for an external reason. The AI's current memory is inaccurate and should be replaced.",
+  "action": "supersede"
+}

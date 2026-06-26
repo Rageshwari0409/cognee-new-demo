@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    "ACSM Position Stand: Exercise and Fluid Replacement (Med Sci Sports Exerc, 2007)",
+    "NIH ODS — Magnesium Fact Sheet",
+    "NIH ODS — Potassium Fact Sheet"
+  ],
+  "note": "General exercise population guidelines. Consult a sports dietitian for endurance athletes.",
+
+  "hydration_guidelines": {
+    "before_exercise": {
+      "amount": "~500 ml (2 cups) water 2 hours before",
+      "purpose": "Ensure euhydration (normal fluid balance) before training",
+      "source": "ACSM 2007"
+    },
+    "during_exercise": {
+      "under_60_min": "Water sufficient for most people doing moderate exercise",
+      "over_60_min": "Add electrolytes (sodium, potassium) if sweating heavily; 150–250 ml every 15–20 min",
+      "over_90_min_or_heavy_sweat": "Consider sports drink or electrolyte + carb combination",
+      "source": "ACSM 2007"
+    },
+    "after_exercise": {
+      "rule": "1.5 L water per kg of body weight lost (weigh before/after for precision)",
+      "practical_note": "If you don't weigh yourself: drink until urine is pale yellow",
+      "with_food": "Eating post-workout meal with normal sodium content naturally restores electrolytes",
+      "source": "ACSM 2007"
+    }
+  },
+
+  "key_electrolytes": {
+    "sodium": {
+      "role": "Primary electrolyte lost in sweat; regulates fluid balance",
+      "food_sources": ["table salt", "pickles", "salted nuts (small amounts)", "sports drinks"],
+      "exercise_note": "Light exercisers usually get enough from food. Relevant mainly for endurance/heavy sweating."
+    },
+    "potassium": {
+      "role": "Muscle contraction, fluid balance, reduces cramping",
+      "rda_mg": 2600,
+      "food_sources": ["banana", "sweet potato", "avocado", "spinach", "yogurt", "lentils"],
+      "source": "NIH ODS"
+    },
+    "magnesium": {
+      "role": "Muscle function, energy metabolism, sleep quality and recovery",
+      "rda_mg": { "male": 400, "female": 310 },
+      "food_sources": ["almonds", "spinach", "pumpkin seeds", "quinoa", "dark chocolate"],
+      "exercise_note": "Magnesium is often depleted in active individuals — worth tracking in vegetarian athletes.",
+      "source": "NIH ODS"
+    }
+  },
+
+  "signs_of_dehydration_to_flag": [
+    "Muscle cramps during or after exercise",
+    "Dark yellow urine",
+    "Headache after workout",
+    "Feeling dizzy or lightheaded during exercise"
+  ],
+
+  "foods_for_hydration": [
+    { "name": "Watermelon",    "water_pct": 92, "also_provides": "potassium, lycopene" },
+    { "name": "Cucumber",      "water_pct": 96, "also_provides": "low calorie, potassium" },
+    { "name": "Coconut water", "water_pct": 95, "also_provides": "natural electrolytes, potassium" },
+    { "name": "Banana",        "water_pct": 74, "also_provides": "potassium, quick carbs" },
+    { "name": "Spinach",       "water_pct": 91, "also_provides": "iron, magnesium" }
+  ]
+}

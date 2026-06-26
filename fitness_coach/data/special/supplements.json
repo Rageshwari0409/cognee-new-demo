@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    "ISSN Position Stand: Creatine Supplementation (JISSN, 2017) — doi:10.1186/s12970-017-0173-z",
+    "ISSN Position Stand: Caffeine and Exercise Performance (JISSN, 2021) — doi:10.1186/s12970-021-00383-4",
+    "ISSN Position Stand: Protein and Exercise (JISSN, 2017) — doi:10.1186/s12970-017-0177-8",
+    "ISSN Position Stand: Beta-Alanine (JISSN, 2015) — doi:10.1186/s12970-015-0090-y"
+  ],
+  "evidence_grades": {
+    "A": "Strong evidence — multiple well-designed RCTs consistently support use",
+    "B": "Moderate evidence — some RCTs support use, more research needed",
+    "C": "Limited evidence — preliminary or conflicting results",
+    "D": "No credible evidence or evidence of harm"
+  },
+  "rule": "Only recommend supplements graded A or B. Never recommend brands. Always ask goal and health context first.",
+
+  "supplements": {
+    "creatine_monohydrate": {
+      "evidence_grade": "A",
+      "what_it_does": "Increases phosphocreatine stores, enabling higher-intensity effort and faster recovery between sets.",
+      "who_benefits": "Strength and power athletes, HIIT, anyone doing repeated high-intensity efforts.",
+      "dose": "3–5 g/day consistently. Loading phase (20g/day for 5 days) accelerates saturation but is optional.",
+      "timing": "Timing is flexible — post-workout with a meal is a common choice but evidence is not strong on timing.",
+      "vegetarian_note": "Vegetarians have lower baseline muscle creatine — likely to see larger performance gains than omnivores.",
+      "safety": "Well-tolerated in healthy adults. Increase fluid intake. Not recommended for those with kidney disease.",
+      "source": "ISSN 2017 Creatine Position Stand"
+    },
+    "caffeine": {
+      "evidence_grade": "A",
+      "what_it_does": "Reduces perceived effort, improves endurance, strength, and focus. One of the most studied ergogenic aids.",
+      "who_benefits": "Endurance athletes, HIIT, strength training, any sport or gym session over 30 min.",
+      "dose": "3–6 mg per kg body weight (e.g. 180–360 mg for a 60 kg person). Start at lower end.",
+      "timing": "45–60 minutes before exercise for peak plasma levels.",
+      "natural_sources": "Strong brewed coffee (100–150 mg per cup), espresso (~60 mg per shot), green tea (30–50 mg).",
+      "cautions": "Avoid within 6 hours of sleep. Can cause anxiety, palpitations, GI discomfort at high doses. Not for those with anxiety disorders or heart arrhythmias.",
+      "source": "ISSN 2021 Caffeine Position Stand"
+    },
+    "protein_powder": {
+      "evidence_grade": "A",
+      "what_it_does": "Convenient high-quality protein to hit daily targets, especially post-workout.",
+      "types": {
+        "whey": "Fast-digesting, highest leucine content, ideal post-workout for non-vegetarians.",
+        "casein": "Slow-digesting, ideal before bed to sustain MPS overnight.",
+        "plant_based": "Soy protein is complete and comparable to whey. Pea + rice blend gives a complete amino acid profile.",
+        "important": "Whole food first — powder fills gaps, not the foundation."
+      },
+      "vegetarian_vegan": "Soy protein isolate or pea+rice blend are the best plant options. Avoid single-source rice protein (low leucine).",
+      "dose": "20–40 g per serving to maximise MPS. Total daily intake counts more than timing.",
+      "source": "ISSN 2017 Protein Position Stand"
+    },
+    "beta_alanine": {
+      "evidence_grade": "B",
+      "what_it_does": "Increases muscle carnosine, buffering acid buildup during high-intensity exercise lasting 1–4 minutes.",
+      "who_benefits": "HIIT, rowing, cycling, swimming, combat sports — high-intensity efforts in the 1–4 minute range.",
+      "dose": "3.2–6.4 g/day divided into smaller doses (0.8–1.6 g) to reduce tingling (paraesthesia).",
+      "cautions": "Common side effect is harmless tingling/flushing. Use slow-release form to minimise.",
+      "source": "ISSN 2015 Beta-Alanine Position Stand"
+    },
+    "magnesium": {
+      "evidence_grade": "B",
+      "what_it_does": "Supports muscle function, reduces cramping, aids sleep quality and overnight recovery.",
+      "who_benefits": "Active individuals, especially vegetarians (plant foods have magnesium but also phytates that reduce absorption).",
+      "dose": "200–400 mg/day from food + supplement combined. Magnesium glycinate or citrate are well-absorbed forms.",
+      "food_first": "Pumpkin seeds (156 mg/oz), almonds, spinach, quinoa, dark chocolate.",
+      "cautions": "High supplemental doses (>350 mg/day) may cause loose stools. Start with food sources.",
+      "source": "NIH ODS — Magnesium Fact Sheet"
+    },
+    "vitamin_d": {
+      "evidence_grade": "B",
+      "what_it_does": "Supports muscle function, immune health, calcium absorption, and bone integrity.",
+      "who_benefits": "Anyone in low-sunlight regions, indoor athletes, vegetarians/vegans (limited dietary sources).",
+      "dose": "1000–2000 IU/day D3 (cholecalciferol) in autumn/winter. Test serum 25(OH)D first if possible.",
+      "vegan_form": "D2 (ergocalciferol) or lichen-derived D3 for vegans.",
+      "cautions": "Fat-soluble — take with a meal containing fat. Excess intake (>4000 IU/day) can be toxic.",
+      "source": "NIH ODS — Vitamin D Fact Sheet"
+    }
+  },
+
+  "what_not_to_recommend": [
+    "Fat burners / thermogenics — no credible evidence, often stimulant-heavy and poorly regulated",
+    "Testosterone boosters — no evidence for most ingredients; potential harm",
+    "HGH supplements — no credible OTC product works; potential harm",
+    "Any supplement for a medical condition (diabetes, thyroid, kidney disease) — refer to doctor"
+  ],
+
+  "ask_before_recommending": [
+    "What is the user's primary goal? (strength, endurance, fat loss, general health)",
+    "Are they vegetarian/vegan? (changes protein and creatine recommendations)",
+    "Do they have any health conditions or medications? (some supplements interact)",
+    "Are they already taking any supplements? (avoid overlap or antagonism)"
+  ]
+}

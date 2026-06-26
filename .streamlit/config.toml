@@ -1,0 +1,17 @@
+[server]
+headless = true
+runOnSave = false
+enableWebsocketCompression = false
+enableXsrfProtection = false
+enableCORS = false
+maxUploadSize = 200
+maxMessageSize = 500
+fileWatcherType = "auto"
+
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"
+
+[runner]
+fastReruns = true
+magicEnabled = false

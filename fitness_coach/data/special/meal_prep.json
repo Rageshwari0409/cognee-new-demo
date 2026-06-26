@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    "General sports nutrition consensus — no single position stand; reflects ACSM and AND practical guidance",
+    "AND: Vegetarian Meal Planning Guidance (2016)",
+    "USDA: Healthy Meal Prep Principles"
+  ],
+  "note": "Meal prep is a practical adherence strategy, not a nutrition intervention. Its value is making the default choice the right one.",
+
+  "core_principles": [
+    "Prep protein sources first — they take the longest and are the hardest to improvise on busy nights",
+    "Batch cook neutral bases (rice, quinoa, oats) that work across multiple meals",
+    "Pre-cut and wash vegetables so they're grab-and-go during the week",
+    "Prepare 3–4 days at a time, not 7 — fresh food after day 4–5 is noticeably less appealing"
+  ],
+
+  "vegetarian_prep_staples": {
+    "protein_batch": [
+      {
+        "item": "Lentil / dal (red or green)",
+        "prep_time_min": 25,
+        "portions": 5,
+        "storage_days": 5,
+        "use_for": "Lunch over rice, dinner with roti, breakfast with eggs",
+        "tip": "Cook a large pot, portion into containers. Freeze half if making for the week."
+      },
+      {
+        "item": "Chickpea curry (chole/chana masala)",
+        "prep_time_min": 30,
+        "portions": 5,
+        "storage_days": 5,
+        "use_for": "Lunch bowl, wrap filling, side with quinoa",
+        "tip": "Canned chickpeas halve the prep time with no nutritional trade-off."
+      },
+      {
+        "item": "Tofu — pan-fried or baked",
+        "prep_time_min": 20,
+        "portions": 4,
+        "storage_days": 4,
+        "use_for": "Stir-fry, salad topping, grain bowl protein",
+        "tip": "Press tofu for 15 min before cooking — removes moisture so it crisps instead of steaming."
+      },
+      {
+        "item": "Hard-boiled eggs (if ovo-vegetarian)",
+        "prep_time_min": 12,
+        "portions": 6,
+        "storage_days": 5,
+        "use_for": "Snack, breakfast, salad protein"
+      },
+      {
+        "item": "Edamame — frozen, boiled",
+        "prep_time_min": 5,
+        "portions": 4,
+        "storage_days": 4,
+        "use_for": "Snack, grain bowl add-on, high-protein side"
+      }
+    ],
+    "carb_batch": [
+      {
+        "item": "Brown rice",
+        "prep_time_min": 35,
+        "storage_days": 5,
+        "tip": "Cook 2 cups dry — yields 5+ portions. Portion into containers while hot."
+      },
+      {
+        "item": "Quinoa",
+        "prep_time_min": 20,
+        "storage_days": 5,
+        "tip": "Complete protein — doubles as carb and protein source. Toast dry before adding water for nutty flavour."
+      },
+      {
+        "item": "Rolled oats (dry, measured)",
+        "prep_time_min": 0,
+        "storage_days": 30,
+        "tip": "Pre-portion 40g servings into jars with seeds and dried fruit — overnight oats ready in 3 minutes."
+      }
+    ],
+    "vegetable_prep": [
+      "Wash and chop a week's worth of spinach, broccoli, zucchini, bell pepper",
+      "Roast a large tray of root vegetables (sweet potato, carrot, beet) — eat hot or cold",
+      "Keep a bag of washed cucumber and carrot sticks for snacking"
+    ]
+  },
+
+  "quick_assembly_meals": {
+    "note": "These combine prepped components and take under 5 minutes.",
+    "examples": [
+      {
+        "name": "Power grain bowl",
+        "components": ["brown rice", "chickpea curry", "wilted spinach", "lemon"],
+        "protein_g_approx": 20,
+        "time_min": 3
+      },
+      {
+        "name": "Dal over quinoa",
+        "components": ["lentil dal", "quinoa", "cucumber raita (LF yogurt)"],
+        "protein_g_approx": 25,
+        "time_min": 3
+      },
+      {
+        "name": "Tofu veggie stir-fry",
+        "components": ["prepped tofu", "precut vegetables", "soy sauce", "brown rice"],
+        "protein_g_approx": 22,
+        "time_min": 8
+      },
+      {
+        "name": "Overnight oats",
+        "components": ["portioned oats jar", "add milk (LF) + banana the night before"],
+        "protein_g_approx": 12,
+        "time_min": 2
+      }
+    ]
+  },
+
+  "storage_safety": {
+    "fridge": "Cooked food safe for 4–5 days at <4°C (40°F).",
+    "freezer": "Dal, curry, and cooked grains freeze well for up to 3 months.",
+    "label": "Always label with date. First-in, first-out.",
+    "reheat": "Reheat to steaming hot (>74°C / 165°F) all the way through."
+  },
+
+  "30_min_sunday_plan": {
+    "description": "A realistic 30-minute prep session that sets up 4 days of lunches and dinners.",
+    "steps": [
+      "Start rice or quinoa (takes 20–35 min unattended)",
+      "While grains cook: sauté onion + tomato base for dal (5 min), add lentils + spices + water",
+      "While dal simmers: wash and chop vegetables, store in containers",
+      "While dal finishes: portion oats into jars with seeds for breakfast",
+      "Total active time: ~25 min. Hands-off time: ~20 min."
+    ]
+  }
+}

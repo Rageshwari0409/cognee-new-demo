@@ -1,0 +1,164 @@
+{
+  "_comment": "Offline mock responses for the diet coach demo. Edit text here — no code changes needed. Templates use {placeholders} for dynamic food lookup values.",
+
+  "paused": "I just want to check in — how are you doing today? There's no pressure to talk food until you're feeling up to it. I'm here whenever you're ready.",
+
+  "intents": [
+    {
+      "id": "lentils_iron",
+      "match_any": ["lentil"],
+      "match_all_secondary": ["iron", "food"],
+      "food_lookup": "lentils",
+      "reply": "Lentils are one of the best plant-based iron sources going — a cup cooked has about **{iron_mg} mg of iron**, **{protein_g} g of protein** and **{fiber_g} g of fiber** (USDA FoodData Central). {dri_iron}\n\nSince you're vegetarian, pairing them with something vitamin C-rich — a squeeze of lemon, some tomatoes — helps your body absorb more of that iron. A quick dal covers everything: lactose-free, no peanuts, under 20 minutes with canned lentils.\n\nDo you want me to sketch out a simple weeknight dal, or were you mainly curious about the numbers?"
+    },
+    {
+      "id": "iron_general",
+      "match_any": ["iron"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "As a vegetarian, iron is worth keeping an eye on. {dri_iron}\n\nYour best bets are lentils, chickpeas, spinach, and fortified oats — all fitting your setup. Pair them with vitamin C (lemon, tomatoes, bell pepper) to boost absorption.\n\nWant a weeknight meal that combines a few of those?"
+    },
+    {
+      "id": "breakfast",
+      "match_any": ["breakfast", "morning", "wake"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "You've mentioned keeping breakfast simple — oatmeal or fruit. Rolled oats with a sliced banana and a handful of almonds takes five minutes: slow-release carbs, fiber, enough protein to avoid a mid-morning crash. Use water or lactose-free milk — the banana makes it sweet enough.\n\nThe almonds add iron and healthy fat, which matters on a vegetarian diet. If mornings are rushed, banana and almonds to grab on the way out is genuinely solid.\n\nHow much time do you realistically have before leaving the house?"
+    },
+    {
+      "id": "snack_energy",
+      "match_any": ["snack", "hungry", "afternoon", "3pm", "energy"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "You mentioned low energy around 3 pm — that dip usually means lunch didn't have enough protein or fiber to last. A handful of **almonds with an apple** is the simplest fix: zero prep, fiber from the apple slows sugar absorption so you don't spike and crash.\n\nIf you want something more substantial, hummus with veggie sticks — chickpeas give you a protein hit without dairy or peanuts.\n\nIs the 3 pm crash happening most days, or only after lighter lunches?"
+    },
+    {
+      "id": "dinner",
+      "match_any": ["dinner", "evening", "tonight", "weeknight"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "For a weeknight dinner in under 20 minutes, a **Mediterranean chickpea bowl** is one of the easiest ones I keep coming back to for you. Brown rice or quinoa as the base, canned chickpeas in olive oil, cumin, and smoked paprika, wilted spinach, cherry tomatoes, lemon over the top. One pan, no dairy, no peanuts.\n\nChickpeas bring around 14 g of protein per cup (USDA), and the spinach adds iron — both useful given you're vegetarian.\n\nWant the actual steps, or does that sketch work for tonight?"
+    },
+    {
+      "id": "pre_workout",
+      "match_any": ["before workout", "pre workout", "pre-workout", "before gym", "before training", "before i train"],
+      "match_all_secondary": [],
+      "food_lookup": "banana",
+      "reply": "For an evening workout, the sweet spot is eating 1–2 hours before — enough time to digest without feeling heavy. A **banana with a small handful of almonds** is an easy pre-workout snack: the banana gives you fast carbs to top up glycogen ({carbs_g} g of carbs, per USDA), and the almonds add a bit of protein and fat to keep energy steady.\n\nIf you have 2–3 hours, a proper meal works better — chickpea rice bowl or dal with rice gives you the carb + protein combo that ISSN recommends for strength sessions (1–4 g carbs/kg, 20 g protein). Since you train in the evenings and prep time is tight, the banana-almond combo is the realistic option most nights.\n\nHow long before training do you usually eat?"
+    },
+    {
+      "id": "post_workout",
+      "match_any": ["after workout", "post workout", "post-workout", "after gym", "after training", "recovery meal", "after i train"],
+      "match_all_secondary": [],
+      "food_lookup": "greek_yogurt_plain",
+      "reply": "Post-workout your body is primed to absorb protein and carbs — the ISSN 2017 guidelines recommend 20–40 g protein within 2 hours to drive muscle protein synthesis. For a vegetarian doing strength training, **Greek yogurt (lactose-free) with banana and oats** hits that window cleanly: around {protein_g} g protein from the yogurt, fast carbs from the banana to replenish glycogen, and it's ready in 2 minutes.\n\nIf you want a proper meal instead, a chickpea + quinoa bowl works well — quinoa is a complete protein (all 9 essential amino acids), and chickpeas add leucine which is the key amino acid that triggers muscle repair.\n\nHow soon after training are you usually back home?"
+    },
+    {
+      "id": "protein_needs",
+      "match_any": ["how much protein", "protein target", "protein intake", "protein per day", "protein for muscle", "protein for workout"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "For someone doing strength training and yoga 4 days a week with a general fitness goal, the ISSN 2017 position stand puts you in the **1.4–2.0 g of protein per kg of body weight per day** range. If you share your weight I can give you an exact target — otherwise a practical rule is 20–30 g of protein at each of your 3 meals.\n\nAs a vegetarian, plant proteins are slightly lower in leucine (the amino acid that drives muscle repair), so ISSN recommends nudging toward the upper end of that range. The easiest way to hit it: lentils or chickpeas at lunch and dinner, Greek yogurt or edamame as a post-workout snack, oats with hemp seeds at breakfast.\n\nWant me to map out a full day of meals that gets you there without complicated prep?"
+    },
+    {
+      "id": "hydration_cramps",
+      "match_any": ["cramps", "cramping", "dehydrated", "hydration", "electrolytes", "thirsty after workout", "muscle cramp"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "Cramping after training is often a sign of electrolyte loss — mainly **potassium and magnesium** — rather than just dehydration. Both are easy to replace with food.\n\nFor potassium: banana (422 mg, USDA), spinach, sweet potato, and avocado are all good sources. For magnesium: a small handful of **pumpkin seeds** (156 mg per oz, USDA) or almonds after training does the job. The ACSM also recommends drinking ~500 ml water 2 hours before training and sipping 150–250 ml every 15–20 minutes during sessions longer than an hour.\n\nAre the cramps happening during training, or mainly the next day?"
+    },
+    {
+      "id": "high_protein_veg_foods",
+      "match_any": ["high protein vegetarian", "protein foods", "plant protein", "veg protein", "protein sources"],
+      "match_all_secondary": [],
+      "food_lookup": "edamame_cooked",
+      "reply": "The highest-protein vegetarian options that fit your setup (lactose-free, no peanuts) are: **edamame** ({protein_g} g per half cup, complete protein), **tofu** (~10 g per half cup), **lentils** (~9 g per 100g cooked), **chickpeas** (~9 g), and **hemp seeds** (~9.5 g per 30g, all USDA values).\n\nQuinoa is worth highlighting separately — it's one of the only plant foods with all 9 essential amino acids, which matters a lot for strength training. Pumpkin seeds are also excellent: 8.5 g protein per oz plus magnesium and zinc, both useful for muscle function and recovery.\n\nWould you like to see how to combine these across your meals to hit a daily protein target?"
+    },
+    {
+      "id": "rest_day_eating",
+      "match_any": ["rest day", "no workout today", "off day", "not training today"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "Rest days are actually when muscle repair peaks, so protein still matters — the ISSN recommends staying at 1.4–1.8 g/kg even on days you don't train. What changes is carbs: you can pull those back slightly (3–4 g/kg vs 4–6 g/kg on training days) since you're not depleting glycogen.\n\nPractically for you: same protein sources as training days (lentils, chickpeas, tofu, edamame), slightly smaller portions of rice or oats, and focus on anti-inflammatory foods — spinach, avocado, a handful of almonds. Magnesium from pumpkin seeds or dark chocolate supports sleep and overnight recovery too.\n\nDo you tend to eat less on rest days, or about the same?"
+    },
+    {
+      "id": "vegan_b12",
+      "match_any": ["b12", "vitamin b12", "vegan nutrition", "plant based nutrition"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "Vitamin B12 is the one nutrient that's genuinely not reliably available from plant foods — the Academy of Nutrition and Dietetics (AND 2016) and the NIH are both clear on this. For vegans, a **B12 supplement** isn't optional; it's the safest way to protect your nerve function and red blood cell production. The common dose is 250 mcg daily or 2500 mcg once a week (cyanocobalamin form).\n\nFortified nutritional yeast and fortified plant milks do contain B12, but the amounts vary by brand — always check the label rather than assuming. Since you're vegetarian rather than fully vegan, eggs and dairy are your reliable dietary sources, but it's still worth monitoring levels with a blood test once a year.\n\nAre you asking because you're thinking of going fully plant-based, or do you already have a B12 routine?"
+    },
+    {
+      "id": "vegan_iron",
+      "match_any": ["iron absorption", "plant iron", "non-heme iron", "vegan iron", "vegetarian iron"],
+      "match_all_secondary": [],
+      "food_lookup": "lentils",
+      "reply": "Plant-based iron (non-heme) absorbs less efficiently than the iron in meat — the NIH puts vegetarian iron needs at roughly **1.8 times** the standard amount. The fix isn't eating more iron-rich food; it's pairing what you eat with **vitamin C**.\n\nLentils are your best everyday source — a cooked cup has about **{iron_mg} mg of iron** (USDA). Eat them with a squeeze of lemon juice, some tomatoes, or bell pepper and absorption increases up to 6x. Conversely, having tea or coffee with your meal cuts absorption significantly, so leave a gap of an hour or two.\n\nPumpkin seeds, spinach, and chickpeas are also solid options. Are you tracking iron because of fatigue, or just checking your bases?"
+    },
+    {
+      "id": "injury_recovery",
+      "match_any": ["injured", "injury", "recovering from", "sprain", "fracture", "healing", "torn", "post surgery"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "The most important thing to know about eating during recovery: **don't cut calories or protein just because you're less active**. Research (ISSN 2017, Tipton 2015) shows that injured tissue actually increases protein synthesis demands — aim for **1.6–2.5 g protein per kg** spread across 4–5 meals.\n\nTwo nutrients matter most beyond protein. **Vitamin C** (200–500 mg/day from food) is a direct co-factor for collagen synthesis — critical for tendons, ligaments, and cartilage. Amla (Indian gooseberry) has around 600 mg per fruit, which is exceptional. Red bell pepper (190 mg/cup), broccoli, and kiwi all count. **Zinc** supports wound healing — pumpkin seeds, cashews, and chickpeas are your best vegetarian sources.\n\nWhat type of injury is it — muscle, joint, or bone? That changes the priority slightly."
+    },
+    {
+      "id": "fat_loss",
+      "match_any": ["lose weight", "weight loss", "fat loss", "lose fat", "calorie deficit", "slim down"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "The ISSN and NIH NIDDK both point to the same foundation: a **300–500 kcal/day deficit** is the safest range — enough to lose roughly 0.5 kg/week without triggering muscle loss or hormonal disruption. Aggressive cuts (>750 kcal below maintenance) tend to backfire because they increase hunger and break down muscle along with fat.\n\nThe highest-leverage move for vegetarians is **keeping protein high** — 1.8–2.7 g/kg/day during a deficit. Protein is the most satiating macronutrient, and it protects lean muscle while you lose fat. Lentils, chickpeas, tofu, and Greek yogurt (lactose-free) are your anchors. Fill the rest of the plate with non-starchy vegetables (spinach, broccoli, cucumber) — huge volume, very few calories.\n\nAre you training while trying to lose fat, or is this mainly a diet change?"
+    },
+    {
+      "id": "bulking",
+      "match_any": ["bulk", "bulking", "gain muscle", "gain mass", "lean bulk", "eat more to grow"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "A lean bulk is a **200–300 kcal surplus above maintenance** — enough to build muscle without excessive fat gain (ISSN 2017). Bigger surpluses just add more fat. Protein stays at 1.6–2.2 g/kg/day; carbs go up to 5–7 g/kg on training days to fuel sessions and replenish glycogen.\n\nFor vegetarians the trickiest part is hitting a caloric surplus on plants without eating endlessly. Calorie-dense options that work for you: avocado, seeds (pumpkin, hemp), olive oil on everything, full-fat lactose-free yogurt, and edamame as a snack. Quinoa and lentil dishes give you protein + carbs together, which is efficient.\n\nAre you currently tracking calories, or working more by feel?"
+    },
+    {
+      "id": "supplements_creatine",
+      "match_any": ["creatine", "should i take creatine", "creatine supplement"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "Creatine monohydrate is the most evidence-backed supplement in sports nutrition — Grade A evidence from ISSN (2017). It increases phosphocreatine stores so you can sustain higher-intensity effort and recover faster between sets. The dose is simple: **3–5 g/day**, no loading phase needed, any time of day.\n\nAs a vegetarian, you'll likely see larger gains than an omnivore because your baseline muscle creatine is lower (meat is the main dietary source). It's safe in healthy adults — just drink plenty of water.\n\nThe main non-negotiable before any supplement: whole food first. Creatine adds a few percent on top of solid training and nutrition — it doesn't replace either.\n\nIs strength or endurance your primary goal? That changes whether creatine is especially relevant for you."
+    },
+    {
+      "id": "supplements_general",
+      "match_any": ["supplement", "protein powder", "pre-workout", "beta alanine", "vitamin d supplement", "should i take"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "The short answer on supplements: **food first, fill genuine gaps second**. Most active vegetarians benefit from paying attention to three things before anything else — B12 (supplement mandatory if vegan), Vitamin D (supplement Oct–Apr in low-sunlight climates), and iron (pair every iron-rich meal with vitamin C).\n\nBeyond that, the only sports supplements with Grade A evidence from ISSN are **creatine** (strength/power), **caffeine** (endurance + strength), and **protein powder** (only if you genuinely can't hit targets from food). A pea+rice blend or soy isolate is the vegetarian option.\n\nWhat's the gap you're trying to fill — performance, recovery, or a specific nutrient you're worried about?"
+    },
+    {
+      "id": "sleep_recovery",
+      "match_any": ["before bed", "before sleep", "before sleeping", "sleep badly", "sleep after training", "can't sleep", "overnight recovery", "wake up sore", "pre sleep", "night snack", "bedtime"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "Nutrition can genuinely support overnight recovery. The most evidence-backed approach (Res et al, 2012) is **30–40 g of slow-digesting protein 30–60 min before bed** to sustain muscle protein synthesis overnight. For you, lactose-free Greek yogurt with a banana is the simplest option — casein protein from the yogurt, tryptophan from the banana (the amino acid your body converts to melatonin), and a small carb to help tryptophan reach the brain.\n\nMagnesium also matters for sleep quality — a small handful of pumpkin seeds in the evening covers this. Avoid caffeine after 2 pm, and keep the last big meal at least 2 hours before sleep — elevated body temperature from digestion is a surprisingly common sleep disruptor.\n\nIs the issue falling asleep, staying asleep, or not feeling rested despite enough hours?"
+    },
+    {
+      "id": "gut_health",
+      "match_any": ["bloated", "bloating", "stomach cramps", "nausea after training", "gi distress", "gut", "digestive", "runs after running", "stomach issues workout"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "GI distress during or after training is very common and almost always manageable through food timing. The main culprits: **high-fibre foods eaten too close to training** (legumes, raw veg, fruit), high-fat meals, and dairy for anyone lactose-intolerant (which you are).\n\nThe practical fix: keep the meal 2–3 hours before training moderate in fibre and fat. If you're training in the evening and eating dinner close to it, switch to something light and easily digestible — plain rice, banana, or a small portion of tofu. Avoid dal, chickpeas, or raw salads within 90 minutes of training even though they're great foods outside that window.\n\nIs this happening before, during, or after training? That changes the likely cause."
+    },
+    {
+      "id": "protein_veg_foods",
+      "match_any": ["high-protein vegetarian", "high protein vegetarian", "protein vegetarian foods", "best protein foods", "protein sources vegetarian", "vegetarian protein sources", "plant protein foods"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "For vegetarians, the highest-protein foods per serving are: **tofu** (20g per 250g block), **lentils and dal** (18g per cooked cup), **chickpeas** (14g per cup), **edamame** (17g per cup), **Greek yogurt lactose-free** (17g per cup), and **quinoa** (8g per cup — complete protein).\n\nThe key thing for vegetarians isn't just hitting the total — it's getting **leucine** at each meal, the amino acid that actually triggers muscle protein synthesis. Lentils are low in leucine, so pairing them with quinoa or adding hemp seeds closes the gap. ISSN 2017 recommends aiming 10–20% higher on total protein than omnivores for this reason.\n\nDo you want a quick meal that combines two of these into a single high-protein dish?"
+    },
+    {
+      "id": "meal_prep",
+      "match_any": ["meal prep", "batch cook", "prep for the week", "sunday prep", "what to prep", "cook ahead"],
+      "match_all_secondary": [],
+      "food_lookup": null,
+      "reply": "A 30-minute Sunday prep session can set up 4 days of lunches and dinners. The sequence that works: **start rice or quinoa first** (20–35 min unattended), then use that time to sauté onion and tomato for a dal base and add lentils, then wash and chop vegetables into containers while everything simmers.\n\nFor protein batch: a pot of lentil dal gives you 5 portions — over rice for lunch, with roti for dinner, or mixed into a grain bowl. Canned chickpeas take 10 minutes to turn into a spiced chickpea curry (chana masala) for variety. Tofu pan-fried in batches crisps up and stores for 4 days.\n\nFor breakfast: portion 40g of oats into jars with a teaspoon of hemp seeds and some dried fruit — overnight oats take 2 minutes to assemble the night before.\n\nHow many days a week are you trying to cover? That tells me how much to prep."
+    }
+  ],
+
+  "default": "Given that you enjoy {cuisines} flavors and need something under {max_prep} minutes, a **chickpea and spinach bowl** is a strong option — canned chickpeas in olive oil and cumin, wilted spinach, over brown rice. Lactose-free, no peanuts, one pan.\n\nChickpeas bring about 14 g of protein per cup (USDA) and the spinach adds iron, both useful for a {diet_type} diet.\n\nIs this for home, or do you need something more portable today?"
+}

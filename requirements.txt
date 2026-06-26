@@ -1,0 +1,29 @@
+streamlit>=1.30.0
+python-dotenv>=1.0.0
+numpy>=1.22.0
+faiss-cpu>=1.7.4
+sentence-transformers>=2.2.2
+pyvis>=0.3.0
+torchvision
+einops
+matplotlib
+seaborn
+
+# Evaluation & Ragas Dependencies
+ragas
+datasets
+langchain-google-genai
+pandas
+chromadb
+snowballstemmer
+google-genai
+protobuf==3.20.3
+pysqlite3-binary; sys_platform == 'linux'
+google-generativeai
+
+cognee
+cognee[neo4j]
+
+# Notebook validation and testing
+nbformat
+nbconvert

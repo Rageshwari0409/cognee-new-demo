@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    "ISSN Position Stand: Protein and Exercise (JISSN, 2017) — doi:10.1186/s12970-017-0177-8",
+    "Tipton KD: Nutrition for Injured Athletes (Biol Sport, 2015) — doi:10.5604/20831862.1134497",
+    "NIH ODS: Vitamin C, Zinc, Vitamin D, Calcium Fact Sheets",
+    "Close GL et al: Nutrition and Immune Function in Athletes (Proc Nutr Soc, 2021)"
+  ],
+  "note": "Dietary changes support recovery but do not replace medical treatment. Always follow the care team's instructions.",
+
+  "key_principle": "Injury typically reduces activity but does NOT reduce protein or micronutrient needs — in many cases it increases them. Under-eating during recovery slows healing and risks excess muscle loss.",
+
+  "recovery_phases": {
+    "acute_inflammation": {
+      "timeframe": "Days 1–5",
+      "goal": "Control inflammation, prevent excessive muscle loss, support immune response.",
+      "do": [
+        "Maintain protein intake — do not reduce despite lower activity",
+        "Prioritise omega-3 rich foods to modulate inflammation",
+        "Ensure adequate vitamin C and zinc for immune support and tissue repair",
+        "Stay well hydrated — fluid supports tissue perfusion"
+      ],
+      "avoid": [
+        "Aggressively restricting calories — this is the #1 mistake during injury",
+        "High-dose antioxidant supplements in the first 48–72 hrs (may blunt the beneficial inflammatory signal)"
+      ]
+    },
+    "repair_regeneration": {
+      "timeframe": "Days 5–60+ depending on injury type",
+      "goal": "Collagen synthesis, muscle protein synthesis, bone/cartilage repair.",
+      "do": [
+        "Protein 1.6–2.5 g/kg/day — higher end especially for muscle or tendon injuries",
+        "Vitamin C 200–500 mg/day from food — essential co-factor for collagen synthesis",
+        "Zinc from food — supports tissue repair and immune function",
+        "Calcium + Vitamin D for bone stress injuries"
+      ],
+      "key_timing": "Spread protein across 4–5 meals; 20–40 g per serving stimulates maximal MPS"
+    },
+    "return_to_training": {
+      "timeframe": "Varies — weeks to months",
+      "goal": "Rebuild muscle mass and strength lost during immobilisation.",
+      "do": [
+        "Maintain high protein (1.6–2.2 g/kg)",
+        "Increase carbohydrates as activity resumes to fuel sessions",
+        "Creatine monohydrate 3–5 g/day — ISSN evidence supports accelerating strength return after immobilisation",
+        "Continue vitamin D and calcium for bone injuries"
+      ]
+    }
+  },
+
+  "key_nutrients_for_recovery": {
+    "protein": {
+      "target_g_per_kg": "1.6–2.5 (higher than maintenance due to increased MPS demand)",
+      "why": "Prevents muscle loss during immobilisation; drives tissue repair.",
+      "vegetarian_sources": ["lentils", "chickpeas", "tofu", "edamame", "Greek yogurt (LF)", "quinoa"],
+      "source": "ISSN 2017; Tipton 2015"
+    },
+    "vitamin_c": {
+      "target_mg_per_day": "200–500 from food (no evidence that megadoses help beyond this)",
+      "why": "Rate-limiting co-factor in collagen synthesis — critical for tendons, ligaments, cartilage.",
+      "top_sources": [
+        { "food": "Bell pepper, red (1 cup)", "vitamin_c_mg": 190 },
+        { "food": "Guava (1 fruit)",          "vitamin_c_mg": 228 },
+        { "food": "Kiwi (1 medium)",          "vitamin_c_mg": 71 },
+        { "food": "Broccoli, cooked (1 cup)", "vitamin_c_mg": 101 },
+        { "food": "Amla / Indian gooseberry (1 fruit)", "vitamin_c_mg": 600 }
+      ],
+      "source": "NIH ODS — Vitamin C Fact Sheet"
+    },
+    "zinc": {
+      "target_mg_per_day": "8–11 (standard RDA; no evidence for therapeutic megadoses)",
+      "why": "Cell proliferation, immune response, wound healing.",
+      "top_sources": ["pumpkin seeds", "cashews", "chickpeas", "hemp seeds"],
+      "source": "NIH ODS — Zinc Fact Sheet"
+    },
+    "omega_3": {
+      "target": "2–3 g EPA+DHA/day during acute inflammation phase",
+      "why": "Modulates inflammatory response; may reduce muscle loss during immobilisation (Close et al 2021).",
+      "sources": { "non_vegetarian": "fatty fish (salmon, mackerel)", "vegan": "algal oil supplement" },
+      "source": "Close et al 2021; NIH ODS — Omega-3"
+    },
+    "vitamin_d_and_calcium": {
+      "when_most_relevant": "Bone stress fractures, shin splints, joint injuries",
+      "vitamin_d_iu": 600,
+      "calcium_mg": 1000,
+      "sources": ["fortified plant milk", "tofu (calcium-set)", "almonds", "broccoli", "sunlight exposure"],
+      "source": "NIH ODS — Vitamin D; Calcium Fact Sheets"
+    },
+    "collagen_precursors": {
+      "why": "Gelatin / hydrolysed collagen with vitamin C before exercise or physio improves collagen synthesis in tendons and cartilage.",
+      "dose": "15 g gelatin or collagen peptides + 200 mg vitamin C, 30–60 min before loading the injured tissue",
+      "vegetarian_note": "Gelatin is not vegetarian. Vegan alternative: vitamin C-rich foods before physio; plant-based collagen boosters (Amla, bell pepper) to maximise endogenous production.",
+      "source": "Shaw G et al, Am J Clin Nutr 2017"
+    }
+  },
+
+  "foods_to_prioritise": [
+    { "food": "Lentil / dal",           "why": "Protein + iron + zinc for tissue repair" },
+    { "food": "Spinach",                "why": "Iron, magnesium, vitamin C" },
+    { "food": "Amla / Indian gooseberry", "why": "Exceptionally high vitamin C for collagen (600 mg/fruit)" },
+    { "food": "Tofu",                   "why": "Complete protein, calcium, iron" },
+    { "food": "Pumpkin seeds",          "why": "Zinc, magnesium, protein" },
+    { "food": "Fortified plant milk",   "why": "Calcium + vitamin D" },
+    { "food": "Bell pepper",            "why": "190 mg vitamin C per cup — pair with iron-rich foods" },
+    { "food": "Walnuts / flaxseed",     "why": "ALA omega-3 for inflammation (vegans)" }
+  ],
+
+  "what_not_to_do": [
+    "Do not aggressively cut calories — healing tissue needs energy",
+    "Do not skip protein because you are less active — MPS demand is actually higher",
+    "Do not rely on supplements over food unless a deficiency is confirmed by blood test",
+    "Do not use NSAIDs (ibuprofen) long-term — impairs collagen synthesis (medical note only)"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "source": "NIH ODS / National Academies DRI summary tables (demo subset)",
+  "note": "General population reference only — not personal medical advice.",
+  "adults_19_59": {
+    "iron_mg_rda": { "male": 8, "female": 18 },
+    "fiber_g_ai": { "male": 38, "female": 25 },
+    "potassium_mg_ai": { "male": 3400, "female": 2600 },
+    "protein_g_rda": { "male": 56, "female": 46 },
+    "calcium_mg_rda": { "male": 1000, "female": 1000 }
+  }
+}

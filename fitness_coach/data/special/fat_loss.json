@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    "ISSN Position Stand: Diets and Body Composition (JISSN, 2017) — doi:10.1186/s12970-017-0174-y",
+    "NIH NIDDK: Healthy Eating for a Healthy Weight (2023)",
+    "Hall KD et al: Calorie for Calorie, Dietary Fat Restriction is More Metabolically Harmful than Carbohydrate Restriction in Mice (Cell Metabolism, 2015) — referenced for context only",
+    "ACSM Position Stand: Exercise and Nutrition for Health (Med Sci Sports Exerc, 2016)"
+  ],
+  "note": "Fat loss is a medical and personal matter. These are general evidence-based guidelines. Not a substitute for clinical assessment.",
+
+  "key_principles": {
+    "caloric_deficit": {
+      "safe_range_kcal_per_day": "300–500 below maintenance",
+      "why": "Creates consistent, sustainable fat loss of ~0.5–1 kg/week without triggering extreme hunger or muscle breakdown.",
+      "aggressive_deficit_risk": "Deficits >750 kcal/day increase muscle loss, hormonal disruption, and poor adherence (ISSN 2017).",
+      "source": "ISSN 2017; NIH NIDDK"
+    },
+    "protein_during_fat_loss": {
+      "target_g_per_kg": "1.8–2.7",
+      "why": "Higher protein preserves lean muscle mass during caloric deficit — the most evidence-backed strategy (ISSN 2017). Also the most satiating macronutrient.",
+      "practical_rule": "30 g protein per meal, 3 meals/day = 90 g total — a solid floor for most adults.",
+      "source": "ISSN 2017"
+    },
+    "carbohydrates": {
+      "recommendation": "Do not eliminate — adjust to match activity. On training days: 4–6 g/kg. Rest days: 2–3 g/kg.",
+      "type_matters": "Whole foods (oats, brown rice, lentils, sweet potato) provide fiber and slow sugar absorption. Ultra-processed carbs spike insulin and reduce satiety.",
+      "source": "ACSM 2016; ISSN 2017"
+    },
+    "dietary_fat": {
+      "recommendation": "Keep at 20–35% of total calories. Do not drop below 20% — hormonal disruption risk.",
+      "prioritise": "Unsaturated fats (olive oil, avocado, nuts, seeds). Limit saturated fats.",
+      "source": "ACSM 2016"
+    }
+  },
+
+  "satiety_strategies": {
+    "high_volume_low_calorie": {
+      "principle": "Fill half the plate with non-starchy vegetables — high water and fiber content creates fullness on fewer calories.",
+      "best_options": ["spinach", "cucumber", "tomatoes", "zucchini", "broccoli", "cauliflower", "cabbage", "mushrooms"]
+    },
+    "fiber": {
+      "target_g_per_day": 25,
+      "why": "Slows gastric emptying; feeds gut bacteria; reduces overall calorie absorption slightly.",
+      "top_sources": ["lentils (7 g/100g cooked)", "chickpeas (6 g)", "oats (4 g/40g)", "avocado (7 g/100g)", "broccoli (2.6 g/100g)"],
+      "source": "NIH NIDDK"
+    },
+    "protein_at_breakfast": {
+      "why": "Eating protein in the morning reduces total daily caloric intake by reducing appetite hormones (ghrelin).",
+      "easy_vegetarian_options": ["Oats with hemp seeds or Greek yogurt (LF)", "Tofu scramble", "Eggs (if ovo-vegetarian)"]
+    },
+    "meal_frequency": {
+      "evidence": "3 meals/day vs 6 smaller meals shows no significant fat loss difference when total calories match (ISSN 2017). Choose what fits your lifestyle and reduces hunger.",
+      "source": "ISSN 2017"
+    }
+  },
+
+  "foods_that_help": [
+    { "food": "Lentils",           "why": "High protein + fiber, low calorie density — very filling" },
+    { "food": "Oats",              "why": "Beta-glucan fiber increases satiety hormones; slow carb" },
+    { "food": "Eggs",              "why": "Highest satiety per calorie of any food (ovo-vegetarians)" },
+    { "food": "Greek yogurt (LF)", "why": "High protein, probiotic, low energy density" },
+    { "food": "Apple",             "why": "Pectin fiber, water content, low calorie — good pre-meal" },
+    { "food": "Avocado",           "why": "Healthy fat + fiber — reduces post-meal insulin spike" },
+    { "food": "Chickpeas",         "why": "Protein + fiber + iron; great substitute for processed snacks" },
+    { "food": "Spinach",           "why": "Virtually zero calories, high volume, iron and magnesium" }
+  ],
+
+  "foods_to_reduce": [
+    { "food": "Ultra-processed snacks",       "reason": "High calorie density, low satiety, engineered to over-eat" },
+    { "food": "Sugary drinks (juices, sodas)", "reason": "Liquid calories don't trigger satiety; one glass = 150+ kcal" },
+    { "food": "White bread and instant noodles", "reason": "Rapid glucose spike and crash drives hunger within 2 hours" },
+    { "food": "Fried foods",                  "reason": "Very high calorie density; hard to portion accurately" }
+  ],
+
+  "vegetarian_fat_loss_tips": [
+    "Prioritise lentils, chickpeas, and tofu as the protein anchor of every meal — they also provide fiber which most fat loss diets lack.",
+    "Use dal / sabzi / curry as the base — they are naturally portion-moderate and nutrient-dense.",
+    "Avoid compensating calorie cuts with extra refined carbs (white rice, roti) — replace some with extra dal, vegetables, or quinoa.",
+    "Watch dairy if lactose intolerant — hidden calories in paneer, cream, and ghee add up quickly."
+  ],
+
+  "common_myths_debunked": {
+    "myth_carbs_cause_fat_gain": "Excess calories cause fat gain — not carbohydrates specifically. Whole food carbs support training and are not the enemy.",
+    "myth_fat_free_is_better": "Removing fat often adds sugar. Full-fat yogurt is more satiating than fat-free versions with added sugar.",
+    "myth_skipping_meals_helps": "Meal skipping increases hunger hormones and often leads to over-eating later. Calorie timing matters less than total daily intake.",
+    "source": "ISSN 2017"
+  }
+}

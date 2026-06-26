@@ -1,0 +1,167 @@
+[
+  {
+    "id": "3224",
+    "name": "jack jump (male)",
+    "category": "cardio",
+    "body_part": "cardio",
+    "equipment": "body weight",
+    "muscle_group": "quadriceps",
+    "secondary_muscles": [
+      "quadriceps",
+      "calves"
+    ],
+    "target": "cardiovascular system",
+    "instructions": "Stand with your feet together and your arms by your sides. Jump up, spreading your feet apart and raising your arms above your head. As you land, quickly jump back to the starting position. Repeat for the desired number of repetitions.",
+    "level": "beginner"
+  },
+  {
+    "id": "0666",
+    "name": "raise single arm push-up",
+    "category": "chest",
+    "body_part": "chest",
+    "equipment": "body weight",
+    "muscle_group": "triceps",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders",
+      "core"
+    ],
+    "target": "pectorals",
+    "instructions": "Start in a push-up position with your hands slightly wider than shoulder-width apart and your feet together. Extend one arm straight out to the side, parallel to the ground. Lower your body towards the ground by bending your elbows, keeping your back straight and core engaged. Push back up to the starting position, using your chest muscles to lift your body. Repeat with the other arm extended.",
+    "level": "beginner"
+  },
+  {
+    "id": "0976",
+    "name": "band concentration curl",
+    "category": "upper arms",
+    "body_part": "upper arms",
+    "equipment": "band",
+    "muscle_group": "forearms",
+    "secondary_muscles": [
+      "forearms"
+    ],
+    "target": "biceps",
+    "instructions": "Sit on a bench or chair with your legs spread apart and your feet flat on the ground. Hold one end of the band in your hand and step on the other end with your foot on the same side. Lean forward slightly and rest your elbow on the inside of your thigh, just above the knee. With your palm facing up, slowly curl your hand towards your shoulder, keeping your upper arm stationary. Pause for a moment at the top, then slowly lower your hand back down to the starting position. Repeat for the desired number of repetitions, then switch sides.",
+    "level": "medium"
+  },
+  {
+    "id": "0668",
+    "name": "rear decline bridge",
+    "category": "upper legs",
+    "body_part": "upper legs",
+    "equipment": "body weight",
+    "muscle_group": "hamstrings",
+    "secondary_muscles": [
+      "hamstrings",
+      "lower back"
+    ],
+    "target": "glutes",
+    "instructions": "Lie on your back with your feet flat on the ground and your knees bent. Place your arms by your sides with your palms facing down. Engage your glutes and hamstrings, and lift your hips off the ground until your body forms a straight line from your knees to your shoulders. Hold this position for a few seconds, then slowly lower your hips back down to the starting position. Repeat for the desired number of repetitions.",
+    "level": "beginner"
+  },
+  {
+    "id": "1350",
+    "name": "lever seated row",
+    "category": "back",
+    "body_part": "back",
+    "equipment": "leverage machine",
+    "muscle_group": "biceps",
+    "secondary_muscles": [
+      "biceps",
+      "forearms"
+    ],
+    "target": "upper back",
+    "instructions": "Adjust the seat height and footrests to a comfortable position. Sit on the machine with your chest against the pad and your feet on the footrests. Grasp the handles with an overhand grip, shoulder-width apart. Keep your back straight and your core engaged. Pull the handles towards your body, squeezing your shoulder blades together. Pause for a moment at the peak of the movement. Slowly release the handles and return to the starting position. Repeat for the desired number of repetitions.",
+    "level": "medium"
+  },
+  {
+    "id": "0390",
+    "name": "dumbbell seated biceps curl (on stability ball)",
+    "category": "upper arms",
+    "body_part": "upper arms",
+    "equipment": "dumbbell",
+    "muscle_group": "forearms",
+    "secondary_muscles": [
+      "forearms"
+    ],
+    "target": "biceps",
+    "instructions": "Sit on a stability ball with your feet flat on the ground and your back straight. Hold a dumbbell in each hand with your palms facing forward and your arms fully extended. Keeping your upper arms stationary, exhale and curl the dumbbells while contracting your biceps. Continue to raise the dumbbells until your biceps are fully contracted and the dumbbells are at shoulder level. Hold the contracted position for a brief pause as you squeeze your biceps. Inhale and slowly begin to lower the dumbbells back to the starting position. Repeat for the desired number of repetitions.",
+    "level": "medium"
+  },
+  {
+    "id": "0469",
+    "name": "groin crunch",
+    "category": "waist",
+    "body_part": "waist",
+    "equipment": "body weight",
+    "muscle_group": "hip flexors",
+    "secondary_muscles": [
+      "hip flexors",
+      "inner thighs"
+    ],
+    "target": "abs",
+    "instructions": "Lie flat on your back with your knees bent and feet flat on the ground. Place your hands behind your head with your elbows pointing outwards. Engaging your abs, lift your legs off the ground, bringing your knees towards your chest. Pause for a moment at the top, then slowly lower your legs back down to the starting position. Repeat for the desired number of repetitions.",
+    "level": "beginner"
+  },
+  {
+    "id": "0494",
+    "name": "incline reverse grip push-up",
+    "category": "chest",
+    "body_part": "chest",
+    "equipment": "body weight",
+    "muscle_group": "triceps",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "target": "pectorals",
+    "instructions": "Place your hands on the edge of a bench or elevated surface, slightly wider than shoulder-width apart. Extend your legs behind you, resting on the balls of your feet, creating a straight line from your head to your heels. Lower your chest towards the bench by bending your elbows, keeping them close to your sides. Pause for a moment at the bottom, then push yourself back up to the starting position by extending your arms. Repeat for the desired number of repetitions.",
+    "level": "beginner"
+  },
+  {
+    "id": "1370",
+    "name": "barbell floor calf raise",
+    "category": "lower legs",
+    "body_part": "lower legs",
+    "equipment": "barbell",
+    "muscle_group": "hamstrings",
+    "secondary_muscles": [
+      "hamstrings"
+    ],
+    "target": "calves",
+    "instructions": "Place a barbell on the floor in front of you. Stand with the balls of your feet on the edge of the barbell, with your heels hanging off. Hold onto a stable object for balance if needed. Raise your heels as high as possible, using your calves to lift your body. Pause for a moment at the top, then slowly lower your heels back down to the starting position. Repeat for the desired number of repetitions.",
+    "level": "medium"
+  },
+  {
+    "id": "1335",
+    "name": "exercise ball back extension with knees off ground",
+    "category": "back",
+    "body_part": "back",
+    "equipment": "stability ball",
+    "muscle_group": "glutes",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "target": "spine",
+    "instructions": "Place the stability ball on the ground and lie face down on top of it, with your hips resting on the ball and your feet against a wall for stability. Position your hands behind your head or crossed over your chest. Engage your core and slowly lift your upper body off the ball, extending your back until your body forms a straight line from your head to your heels. Pause for a moment at the top, then slowly lower your upper body back down to the starting position. Repeat for the desired number of repetitions.",
+    "level": "medium"
+  },
+  {
+    "id": "1433",
+    "name": "smith front squat (clean grip)",
+    "category": "upper legs",
+    "body_part": "upper legs",
+    "equipment": "smith machine",
+    "muscle_group": "quadriceps",
+    "secondary_muscles": [
+      "quadriceps",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "target": "glutes",
+    "instructions": "Set up the smith machine with the barbell at shoulder height. Stand facing the barbell with your feet shoulder-width apart. Grasp the barbell with an overhand grip, slightly wider than shoulder-width apart. Step back and position the barbell on your front shoulders, resting it on your collarbone and deltoids. Keep your chest up, back straight, and core engaged. Lower your body by bending at the knees and hips, as if sitting back into a chair. Continue lowering until your thighs are parallel to the ground or slightly below. Pause for a moment, then push through your heels to return to the starting position. Repeat for the desired number of repetitions.",
+    "level": "intermediate"
+  }
+]

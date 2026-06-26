@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    "ISSN Position Stand: Probiotics and the Athlete (JISSN, 2019) — doi:10.1186/s12970-019-0327-2",
+    "de Oliveira EP et al: Gastrointestinal Complaints During Exercise (Sports Med, 2014)",
+    "NIH NIDDK: Eating, Diet, and Nutrition for Irritable Bowel Syndrome",
+    "ACSM: Nutrition and Athletic Performance (Med Sci Sports Exerc, 2016)"
+  ],
+  "note": "GI distress is one of the most common reasons athletes underperform or abandon training plans. Most cases are manageable through food timing and composition.",
+
+  "gi_distress_during_exercise": {
+    "who_is_at_risk": "Runners (mechanical jostling), cyclists (prolonged aero position), high-intensity athletes, anyone with pre-existing IBS or food intolerances.",
+    "common_symptoms": ["nausea", "bloating", "cramping", "urgency / runner's trots", "side stitch"],
+    "main_causes": [
+      "High-fibre foods eaten too close to training (fermentation, gas)",
+      "High-fat meals pre-workout (slow gastric emptying, blood diverted to digestion)",
+      "Dehydration (reduces gut motility)",
+      "Dairy for lactose-intolerant athletes",
+      "Fructose or sorbitol in pre-workout foods (apples, pears, protein bars with sugar alcohols)"
+    ]
+  },
+
+  "timing_rules": {
+    "2_3_hours_before": "Last full meal. Moderate fibre, moderate fat, good carb + protein content.",
+    "1_hour_before": "Small snack only. Low fibre, low fat, easily digestible carbs. E.g. banana, plain rice cake, dates.",
+    "30_min_before": "If anything: a few dates or a small banana. Nothing high in fat, fibre, or protein.",
+    "foods_to_avoid_pre_training": [
+      "Raw vegetables and salads (high fibre, fermentation)",
+      "Legumes (dal, chickpeas, kidney beans) — fine at dinner, avoid 2 hrs pre-training",
+      "High-fat foods (fried, cheese, avocado in large amounts)",
+      "Dairy for lactose-intolerant athletes",
+      "Carbonated drinks",
+      "Artificial sweeteners (sorbitol, xylitol) in protein bars or sugar-free products"
+    ]
+  },
+
+  "gut_microbiome_and_performance": {
+    "why_it_matters": "A diverse gut microbiome improves nutrient absorption, reduces inflammation, and supports immune function — all relevant for training adaptation.",
+    "probiotics": {
+      "evidence": "Moderate (ISSN 2019). Most benefit seen in reducing upper respiratory infections in athletes and managing GI symptoms.",
+      "best_studied_strains": ["Lactobacillus acidophilus", "Bifidobacterium longum", "Lactobacillus rhamnosus"],
+      "food_sources": ["lactose-free kefir", "yogurt (LF)", "kombucha", "idli/dosa batter (fermented rice-lentil, traditional Indian)", "miso", "tempeh"],
+      "note": "Fermented Indian foods like idli, dosa, dhokla, and kanji are naturally probiotic-rich and widely available."
+    },
+    "prebiotics": {
+      "why": "Feed beneficial gut bacteria. Found in fibre-rich whole foods.",
+      "sources": ["oats (beta-glucan)", "banana (inulin)", "lentils", "chickpeas", "garlic", "onion"],
+      "note": "Increase prebiotic fibre gradually — sudden large increases cause bloating."
+    },
+    "diversity_principle": "Aim for 30+ different plant foods per week to support microbiome diversity. Variety matters more than any single 'superfood'."
+  },
+
+  "bloating_after_training": {
+    "common_causes": [
+      "Post-workout protein shake with lactose or artificial sweeteners",
+      "Eating too quickly after training (swallowing air)",
+      "Sudden increase in fibre intake",
+      "Dehydration causing slower gut motility"
+    ],
+    "fixes": [
+      "Switch to plant-based protein (pea/rice) without sweeteners",
+      "Hydrate well post-workout before eating",
+      "Chew slowly, don't rush the post-workout meal",
+      "If a specific food repeatedly causes bloating, track and remove it for 2 weeks"
+    ]
+  },
+
+  "ibs_and_exercise": {
+    "note": "If symptoms are frequent, severe, or include blood, refer to a doctor — not a dietary adjustment issue.",
+    "low_fodmap_principle": "For IBS athletes, a temporary low-FODMAP trial (under dietitian guidance) can identify trigger foods. High-FODMAP foods include onion, garlic, wheat, apple, high-lactose dairy, legumes in large portions.",
+    "good_pre_workout_for_ibs": ["banana (ripe)", "white rice", "plain oats", "potato", "tofu"]
+  }
+}

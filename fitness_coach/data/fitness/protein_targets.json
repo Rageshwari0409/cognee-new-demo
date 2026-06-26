@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "source": "ISSN Position Stand: Protein and Exercise (JISSN 2017) — doi:10.1186/s12970-017-0177-8",
+  "note": "Values are g of protein per kg of body weight per day. Not medical advice.",
+
+  "by_goal": {
+    "muscle_gain_hypertrophy": {
+      "range_g_per_kg": "1.6–2.2",
+      "practical_note": "Upper end (2.0–2.2 g/kg) beneficial when in caloric deficit to preserve muscle.",
+      "per_meal_g": "20–40",
+      "meals_per_day": 4,
+      "source": "ISSN 2017"
+    },
+    "fat_loss_body_recomposition": {
+      "range_g_per_kg": "1.8–2.7",
+      "practical_note": "Higher protein preserves lean mass during caloric restriction. Vegetarians need careful planning.",
+      "per_meal_g": "20–40",
+      "meals_per_day": 4,
+      "source": "ISSN 2017"
+    },
+    "endurance_performance": {
+      "range_g_per_kg": "1.2–1.6",
+      "practical_note": "Focus on carbs; protein supports muscle repair on heavy training days.",
+      "per_meal_g": "20–30",
+      "meals_per_day": 3,
+      "source": "ACSM/ISSN 2016–2017"
+    },
+    "general_fitness_maintenance": {
+      "range_g_per_kg": "1.4–2.0",
+      "practical_note": "Most exercising individuals fall here comfortably.",
+      "per_meal_g": "20–30",
+      "meals_per_day": 3,
+      "source": "ISSN 2017"
+    },
+    "sedentary_general_health": {
+      "range_g_per_kg": "0.8–1.2",
+      "practical_note": "Standard RDA. Increase toward 1.2 g/kg if doing any resistance training.",
+      "per_meal_g": "15–25",
+      "meals_per_day": 3,
+      "source": "NIH / National Academies RDA"
+    }
+  },
+
+  "vegetarian_plant_based_notes": {
+    "leucine_gap": "Plant proteins have lower leucine density than animal proteins. Compensate by eating slightly more total protein (add 10–20%) or prioritising high-leucine plants: soy, edamame, chickpeas, lentils.",
+    "complete_protein_combos": [
+      "Rice + lentils / dal",
+      "Chickpeas + whole wheat",
+      "Oats + Greek yogurt (lactose-free)",
+      "Quinoa (already complete — all 9 essential amino acids)",
+      "Edamame / tofu (complete soy protein)"
+    ],
+    "digestibility_note": "Plant protein DIAAS (digestibility score) is lower than whey/egg. ISSN recommends vegetarian athletes eat toward upper end of protein range.",
+    "source": "ISSN 2017 + ACSM 2016"
+  },
+
+  "high_protein_vegetarian_foods_per_100g": {
+    "note": "Approximate values — verify with USDA FoodData Central for precision.",
+    "foods": [
+      { "name": "Tofu, firm",           "protein_g": 8,   "notes": "Soy protein, complete" },
+      { "name": "Edamame, cooked",       "protein_g": 11,  "notes": "Complete protein, high leucine" },
+      { "name": "Lentils, cooked",       "protein_g": 9,   "notes": "High iron + protein" },
+      { "name": "Chickpeas, cooked",     "protein_g": 9,   "notes": "Pair with rice for complete profile" },
+      { "name": "Greek yogurt (LF), plain", "protein_g": 10, "notes": "Fast-digesting, good post-workout" },
+      { "name": "Quinoa, cooked",        "protein_g": 4,   "notes": "Complete protein" },
+      { "name": "Hemp seeds",            "protein_g": 32,  "notes": "Complete, high omega-3" },
+      { "name": "Pumpkin seeds",         "protein_g": 30,  "notes": "High zinc + magnesium" },
+      { "name": "Almonds",               "protein_g": 21,  "notes": "Good but fat-dense; eat in moderation" }
+    ]
+  }
+}

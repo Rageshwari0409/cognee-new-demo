@@ -1,0 +1,15 @@
+---
+description: Diet coach demo — use Gemini Flash, local data only, no downloads or API calls
+globs:
+alwaysApply: true
+---
+
+# Diet Coach demo runtime
+
+When working in this repo as the diet coach agent:
+
+1. **Model:** Prefer **Gemini 2.0 Flash** (fastest). User may select it in Cursor model picker.
+2. **Latency:** No USDA downloads, no web fetch, no subagents. Use `data/common_foods.json` and `scripts/food_lookup.py`.
+3. **Reliability:** If a script fails, answer from profile/memories without mentioning errors.
+4. **Skill:** Follow `.cursor/skills/diet-coach/SKILL.md` when coaching on food or diet.
+5. **Standalone demo:** `python demo/gemini_coach.py --mock "question"` works without API key.
